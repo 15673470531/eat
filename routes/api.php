@@ -10,4 +10,12 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('user/info', [UserController::class, 'info']);
     Route::post('user/update-name', [UserController::class, 'updateName']);
     Route::post('user/logout', [UserController::class, 'logout']);
+    Route::prefix('admin')->middleware(\App\Http\Middleware\RequireAdmin::class)->group(function () {
+        Route::get('catalog', [\App\Http\Controllers\Api\AdminCatalogController::class, 'index']);
+        Route::post('ingredients', [\App\Http\Controllers\Api\AdminCatalogController::class, 'ingredient']);
+        Route::put('ingredients/{id}', [\App\Http\Controllers\Api\AdminCatalogController::class, 'ingredient']);
+        Route::post('recipes', [\App\Http\Controllers\Api\AdminCatalogController::class, 'recipe']);
+        Route::put('recipes/{id}', [\App\Http\Controllers\Api\AdminCatalogController::class, 'recipe']);
+        Route::patch('recipes/{id}/status', [\App\Http\Controllers\Api\AdminCatalogController::class, 'status']);
+    });
 });

@@ -16,7 +16,8 @@ class KitchenDatabaseTest extends TestCase {
   $data=$this->getJson('/api/catalog')->assertOk()->json('data');
   $this->assertCount(98,$data['ingredients']['items']);$this->assertCount(44,$data['recipes']);
   $expected=json_decode(file_get_contents(database_path('catalog.json')),true);
-  $this->assertEquals($expected['recipes'],$data['recipes']);
+  $recipes=array_map(function($r){unset($r['revision'],$r['isActive']);return $r;},$data['recipes']);
+  $this->assertEquals($expected['recipes'],$recipes);
  }
  public function test_state_roundtrip_idempotency_conflict_and_account_isolation():void {
   $user=$this->user();$this->actingAs($user,'sanctum');

@@ -38,7 +38,7 @@ class UserController extends Controller
     }
     private function profile(User $user): array
     {
-        return ['userId' => $user->id, 'nickName' => $user->nickname ?: $user->name, 'avatarUrl' => $user->avatar_url];
+        return ['isAdmin' => (int)$user->getRawOriginal('is_admin') === 1, 'userId' => $user->id, 'nickName' => $user->nickname ?: $user->name, 'avatarUrl' => $user->avatar_url];
     }
     public function info(Request $request)
     {
