@@ -1,0 +1,4196 @@
+{
+  "ingredients": {
+    "version": 1,
+    "updatedAt": "2026-09-19",
+    "note": "冰箱配菜 - 食材主数据。pantry=true 表示默认为家庭常备（调料/葱姜蒜/常备干货），不参与『缺少』判定。parent 为泛化父级食材 id：用户勾了子级、菜品要父级时算有；反之不算（保守）。",
+    "categories": [
+      "蔬菜",
+      "菌菇",
+      "豆制品",
+      "肉禽",
+      "蛋奶",
+      "水产",
+      "主食",
+      "干货",
+      "加工肉",
+      "其他",
+      "调料"
+    ],
+    "items": [
+      {
+        "id": "xi_hong_shi",
+        "name": "西红柿",
+        "aliases": [
+          "番茄",
+          "洋柿子"
+        ],
+        "category": "蔬菜",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "tu_dou",
+        "name": "土豆",
+        "aliases": [
+          "马铃薯",
+          "洋芋"
+        ],
+        "category": "蔬菜",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "qing_jiao",
+        "name": "青椒",
+        "aliases": [
+          "柿子椒",
+          "灯笼椒"
+        ],
+        "category": "蔬菜",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "jian_jiao",
+        "name": "尖椒",
+        "aliases": [
+          "线椒",
+          "螺丝椒"
+        ],
+        "category": "蔬菜",
+        "parent": "qing_jiao",
+        "pantry": false
+      },
+      {
+        "id": "yang_cong",
+        "name": "洋葱",
+        "aliases": [
+          "圆葱"
+        ],
+        "category": "蔬菜",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "da_bai_cai",
+        "name": "大白菜",
+        "aliases": [
+          "白菜"
+        ],
+        "category": "蔬菜",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "xiao_bai_cai",
+        "name": "小白菜",
+        "aliases": [
+          "上海青",
+          "油菜"
+        ],
+        "category": "蔬菜",
+        "parent": "da_bai_cai",
+        "pantry": false
+      },
+      {
+        "id": "wa_wa_cai",
+        "name": "娃娃菜",
+        "aliases": [],
+        "category": "蔬菜",
+        "parent": "da_bai_cai",
+        "pantry": false
+      },
+      {
+        "id": "bo_cai",
+        "name": "菠菜",
+        "aliases": [],
+        "category": "蔬菜",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "sheng_cai",
+        "name": "生菜",
+        "aliases": [],
+        "category": "蔬菜",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "huang_gua",
+        "name": "黄瓜",
+        "aliases": [
+          "青瓜"
+        ],
+        "category": "蔬菜",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "qie_zi",
+        "name": "茄子",
+        "aliases": [
+          "矮瓜"
+        ],
+        "category": "蔬菜",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "dou_jiao",
+        "name": "豆角",
+        "aliases": [
+          "四季豆",
+          "豇豆"
+        ],
+        "category": "蔬菜",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "bai_luo_bo",
+        "name": "白萝卜",
+        "aliases": [
+          "萝卜"
+        ],
+        "category": "蔬菜",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "hu_luo_bo",
+        "name": "胡萝卜",
+        "aliases": [
+          "红萝卜"
+        ],
+        "category": "蔬菜",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "lian_ou",
+        "name": "莲藕",
+        "aliases": [
+          "藕"
+        ],
+        "category": "蔬菜",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "dong_gua",
+        "name": "冬瓜",
+        "aliases": [],
+        "category": "蔬菜",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "nan_gua",
+        "name": "南瓜",
+        "aliases": [
+          "倭瓜"
+        ],
+        "category": "蔬菜",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "si_gua",
+        "name": "丝瓜",
+        "aliases": [],
+        "category": "蔬菜",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "jiu_cai",
+        "name": "韭菜",
+        "aliases": [],
+        "category": "蔬菜",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "qin_cai",
+        "name": "芹菜",
+        "aliases": [
+          "西芹"
+        ],
+        "category": "蔬菜",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "xi_lan_hua",
+        "name": "西兰花",
+        "aliases": [
+          "青花菜"
+        ],
+        "category": "蔬菜",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "hua_cai",
+        "name": "花菜",
+        "aliases": [
+          "菜花",
+          "有机花菜"
+        ],
+        "category": "蔬菜",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "xi_hu_lu",
+        "name": "西葫芦",
+        "aliases": [
+          "角瓜"
+        ],
+        "category": "蔬菜",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "shan_yao",
+        "name": "山药",
+        "aliases": [],
+        "category": "蔬菜",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "yu_mi",
+        "name": "玉米",
+        "aliases": [
+          "苞米",
+          "甜玉米"
+        ],
+        "category": "蔬菜",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "dou_ya",
+        "name": "豆芽",
+        "aliases": [
+          "黄豆芽",
+          "绿豆芽"
+        ],
+        "category": "蔬菜",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "xiang_cai",
+        "name": "香菜",
+        "aliases": [
+          "芫荽"
+        ],
+        "category": "蔬菜",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "ping_gu",
+        "name": "平菇",
+        "aliases": [
+          "蘑菇"
+        ],
+        "category": "菌菇",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "xiang_gu",
+        "name": "香菇",
+        "aliases": [
+          "冬菇"
+        ],
+        "category": "菌菇",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "jin_zhen_gu",
+        "name": "金针菇",
+        "aliases": [],
+        "category": "菌菇",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "dou_fu",
+        "name": "豆腐",
+        "aliases": [
+          "嫩豆腐",
+          "老豆腐",
+          "北豆腐"
+        ],
+        "category": "豆制品",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "dou_pi",
+        "name": "豆皮",
+        "aliases": [
+          "千张",
+          "干豆腐"
+        ],
+        "category": "豆制品",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "zhu_rou",
+        "name": "猪肉",
+        "aliases": [
+          "瘦肉",
+          "猪肉块"
+        ],
+        "category": "肉禽",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "wu_hua_rou",
+        "name": "五花肉",
+        "aliases": [
+          "三层肉"
+        ],
+        "category": "肉禽",
+        "parent": "zhu_rou",
+        "pantry": false
+      },
+      {
+        "id": "li_ji_rou",
+        "name": "里脊肉",
+        "aliases": [
+          "猪里脊",
+          "瘦猪肉"
+        ],
+        "category": "肉禽",
+        "parent": "zhu_rou",
+        "pantry": false
+      },
+      {
+        "id": "rou_mo",
+        "name": "肉末",
+        "aliases": [
+          "猪肉末",
+          "肉馅"
+        ],
+        "category": "肉禽",
+        "parent": "zhu_rou",
+        "pantry": false
+      },
+      {
+        "id": "pai_gu",
+        "name": "猪排骨",
+        "aliases": [
+          "排骨",
+          "肋排"
+        ],
+        "category": "肉禽",
+        "parent": "zhu_rou",
+        "pantry": false
+      },
+      {
+        "id": "niu_rou",
+        "name": "牛肉",
+        "aliases": [
+          "牛瘦肉"
+        ],
+        "category": "肉禽",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "niu_nan",
+        "name": "牛腩",
+        "aliases": [],
+        "category": "肉禽",
+        "parent": "niu_rou",
+        "pantry": false
+      },
+      {
+        "id": "ji_rou",
+        "name": "鸡肉",
+        "aliases": [
+          "整鸡",
+          "土鸡"
+        ],
+        "category": "肉禽",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "ji_chi",
+        "name": "鸡翅",
+        "aliases": [
+          "翅中",
+          "鸡中翅"
+        ],
+        "category": "肉禽",
+        "parent": "ji_rou",
+        "pantry": false
+      },
+      {
+        "id": "ji_tui",
+        "name": "鸡腿",
+        "aliases": [
+          "琵琶腿"
+        ],
+        "category": "肉禽",
+        "parent": "ji_rou",
+        "pantry": false
+      },
+      {
+        "id": "ji_xiong_rou",
+        "name": "鸡胸肉",
+        "aliases": [
+          "鸡脯肉"
+        ],
+        "category": "肉禽",
+        "parent": "ji_rou",
+        "pantry": false
+      },
+      {
+        "id": "ji_dan",
+        "name": "鸡蛋",
+        "aliases": [
+          "蛋",
+          "土鸡蛋"
+        ],
+        "category": "蛋奶",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "niu_nai",
+        "name": "牛奶",
+        "aliases": [
+          "纯牛奶"
+        ],
+        "category": "蛋奶",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "zhi_shi",
+        "name": "奶酪",
+        "aliases": [
+          "芝士"
+        ],
+        "category": "蛋奶",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "xia",
+        "name": "虾",
+        "aliases": [
+          "虾仁",
+          "基围虾"
+        ],
+        "category": "水产",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "yu",
+        "name": "鱼",
+        "aliases": [
+          "草鱼",
+          "鲈鱼",
+          "整鱼"
+        ],
+        "category": "水产",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "dai_yu",
+        "name": "带鱼",
+        "aliases": [
+          "刀鱼"
+        ],
+        "category": "水产",
+        "parent": "yu",
+        "pantry": false
+      },
+      {
+        "id": "ha_li",
+        "name": "蛤蜊",
+        "aliases": [
+          "花甲"
+        ],
+        "category": "水产",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "mian_tiao",
+        "name": "面条",
+        "aliases": [
+          "挂面",
+          "手擀面"
+        ],
+        "category": "主食",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "da_mi",
+        "name": "大米",
+        "aliases": [
+          "米",
+          "珍珠米"
+        ],
+        "category": "主食",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "mi_fan",
+        "name": "米饭",
+        "aliases": [
+          "剩米饭",
+          "白饭"
+        ],
+        "category": "主食",
+        "parent": "da_mi",
+        "pantry": false
+      },
+      {
+        "id": "mian_fen",
+        "name": "面粉",
+        "aliases": [
+          "小麦粉"
+        ],
+        "category": "主食",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "man_tou",
+        "name": "馒头",
+        "aliases": [
+          "馍"
+        ],
+        "category": "主食",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "jiao_zi_pi",
+        "name": "饺子皮",
+        "aliases": [
+          "馄饨皮"
+        ],
+        "category": "主食",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "mi_fen_g",
+        "name": "米粉",
+        "aliases": [
+          "米线"
+        ],
+        "category": "主食",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "he_fen",
+        "name": "河粉",
+        "aliases": [
+          "粿条"
+        ],
+        "category": "主食",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "nian_gao",
+        "name": "年糕",
+        "aliases": [
+          "水磨年糕"
+        ],
+        "category": "主食",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "fen_si",
+        "name": "粉丝",
+        "aliases": [
+          "龙口粉丝",
+          "粉条"
+        ],
+        "category": "干货",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "mu_er",
+        "name": "木耳",
+        "aliases": [
+          "黑木耳"
+        ],
+        "category": "干货",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "hua_sheng_mi",
+        "name": "花生米",
+        "aliases": [
+          "花生"
+        ],
+        "category": "干货",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "pei_gen",
+        "name": "培根",
+        "aliases": [
+          "烟肉"
+        ],
+        "category": "加工肉",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "huo_tui_chang",
+        "name": "火腿肠",
+        "aliases": [
+          "火腿"
+        ],
+        "category": "加工肉",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "xiang_chang",
+        "name": "香肠",
+        "aliases": [
+          "腊肠"
+        ],
+        "category": "加工肉",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "ke_le",
+        "name": "可乐",
+        "aliases": [],
+        "category": "其他",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "shi_yong_you",
+        "name": "食用油",
+        "aliases": [
+          "油",
+          "菜籽油",
+          "花生油"
+        ],
+        "category": "调料",
+        "parent": null,
+        "pantry": true
+      },
+      {
+        "id": "yan",
+        "name": "盐",
+        "aliases": [
+          "食盐"
+        ],
+        "category": "调料",
+        "parent": null,
+        "pantry": true
+      },
+      {
+        "id": "sheng_chou",
+        "name": "生抽",
+        "aliases": [
+          "酱油"
+        ],
+        "category": "调料",
+        "parent": null,
+        "pantry": true
+      },
+      {
+        "id": "lao_chou",
+        "name": "老抽",
+        "aliases": [],
+        "category": "调料",
+        "parent": null,
+        "pantry": true
+      },
+      {
+        "id": "cu",
+        "name": "醋",
+        "aliases": [
+          "陈醋",
+          "香醋",
+          "米醋"
+        ],
+        "category": "调料",
+        "parent": null,
+        "pantry": true
+      },
+      {
+        "id": "hao_you",
+        "name": "蚝油",
+        "aliases": [],
+        "category": "调料",
+        "parent": null,
+        "pantry": true
+      },
+      {
+        "id": "liao_jiu",
+        "name": "料酒",
+        "aliases": [
+          "黄酒"
+        ],
+        "category": "调料",
+        "parent": null,
+        "pantry": true
+      },
+      {
+        "id": "bai_tang",
+        "name": "白糖",
+        "aliases": [
+          "糖",
+          "冰糖"
+        ],
+        "category": "调料",
+        "parent": null,
+        "pantry": true
+      },
+      {
+        "id": "dian_fen",
+        "name": "淀粉",
+        "aliases": [
+          "生粉",
+          "玉米淀粉",
+          "红薯淀粉"
+        ],
+        "category": "调料",
+        "parent": null,
+        "pantry": true
+      },
+      {
+        "id": "dou_ban_jiang",
+        "name": "豆瓣酱",
+        "aliases": [
+          "郫县豆瓣"
+        ],
+        "category": "调料",
+        "parent": null,
+        "pantry": true
+      },
+      {
+        "id": "tian_mian_jiang",
+        "name": "甜面酱",
+        "aliases": [],
+        "category": "调料",
+        "parent": null,
+        "pantry": true
+      },
+      {
+        "id": "hua_jiao",
+        "name": "花椒",
+        "aliases": [
+          "麻椒"
+        ],
+        "category": "调料",
+        "parent": null,
+        "pantry": true
+      },
+      {
+        "id": "gan_la_jiao",
+        "name": "干辣椒",
+        "aliases": [
+          "辣椒段"
+        ],
+        "category": "调料",
+        "parent": null,
+        "pantry": true
+      },
+      {
+        "id": "ji_jing",
+        "name": "鸡精",
+        "aliases": [
+          "味精"
+        ],
+        "category": "调料",
+        "parent": null,
+        "pantry": true
+      },
+      {
+        "id": "bai_hu_jiao",
+        "name": "白胡椒粉",
+        "aliases": [
+          "胡椒粉"
+        ],
+        "category": "调料",
+        "parent": null,
+        "pantry": true
+      },
+      {
+        "id": "fan_qie_jiang",
+        "name": "番茄酱",
+        "aliases": [
+          "番茄沙司"
+        ],
+        "category": "调料",
+        "parent": null,
+        "pantry": true
+      },
+      {
+        "id": "zhi_ma",
+        "name": "芝麻",
+        "aliases": [
+          "白芝麻"
+        ],
+        "category": "调料",
+        "parent": null,
+        "pantry": true
+      },
+      {
+        "id": "xiang_you",
+        "name": "香油",
+        "aliases": [
+          "芝麻油"
+        ],
+        "category": "调料",
+        "parent": null,
+        "pantry": true
+      },
+      {
+        "id": "la_jiao_mian",
+        "name": "辣椒面",
+        "aliases": [
+          "辣椒粉"
+        ],
+        "category": "调料",
+        "parent": null,
+        "pantry": true
+      },
+      {
+        "id": "wu_xiang_fen",
+        "name": "五香粉",
+        "aliases": [
+          "十三香"
+        ],
+        "category": "调料",
+        "parent": null,
+        "pantry": true
+      },
+      {
+        "id": "zi_ran",
+        "name": "孜然",
+        "aliases": [
+          "孜然粉"
+        ],
+        "category": "调料",
+        "parent": null,
+        "pantry": true
+      },
+      {
+        "id": "feng_mi",
+        "name": "蜂蜜",
+        "aliases": [],
+        "category": "调料",
+        "parent": null,
+        "pantry": true
+      },
+      {
+        "id": "zhi_ma_jiang",
+        "name": "芝麻酱",
+        "aliases": [
+          "麻酱"
+        ],
+        "category": "调料",
+        "parent": null,
+        "pantry": true
+      },
+      {
+        "id": "da_cong",
+        "name": "大葱",
+        "aliases": [
+          "葱"
+        ],
+        "category": "调料",
+        "parent": null,
+        "pantry": true
+      },
+      {
+        "id": "xiao_cong",
+        "name": "小葱",
+        "aliases": [
+          "香葱",
+          "葱花"
+        ],
+        "category": "调料",
+        "parent": null,
+        "pantry": true
+      },
+      {
+        "id": "jiang",
+        "name": "姜",
+        "aliases": [
+          "生姜"
+        ],
+        "category": "调料",
+        "parent": null,
+        "pantry": true
+      },
+      {
+        "id": "suan",
+        "name": "蒜",
+        "aliases": [
+          "大蒜",
+          "蒜瓣"
+        ],
+        "category": "调料",
+        "parent": null,
+        "pantry": true
+      },
+      {
+        "id": "ya_cai",
+        "name": "芽菜",
+        "aliases": [
+          "宜宾芽菜",
+          "冬菜"
+        ],
+        "category": "干货",
+        "parent": null,
+        "pantry": true
+      },
+      {
+        "id": "gou_qi",
+        "name": "枸杞",
+        "aliases": [],
+        "category": "干货",
+        "parent": null,
+        "pantry": false
+      },
+      {
+        "id": "zi_cai",
+        "name": "紫菜",
+        "aliases": [
+          "海苔"
+        ],
+        "category": "干货",
+        "parent": null,
+        "pantry": true
+      },
+      {
+        "id": "xia_pi",
+        "name": "虾皮",
+        "aliases": [],
+        "category": "干货",
+        "parent": null,
+        "pantry": true
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "id": "dish_qingjiao_chaodan",
+      "name": "青椒炒鸡蛋",
+      "emoji": "🫑",
+      "required": [
+        "qing_jiao",
+        "ji_dan"
+      ],
+      "optional": [
+        "xiao_cong"
+      ],
+      "seasonings": [
+        "shi_yong_you",
+        "yan"
+      ],
+      "tags": [
+        "快手",
+        "家常",
+        "下饭"
+      ],
+      "timeMin": 12,
+      "difficulty": 1,
+      "steps": [
+        "青椒洗净，去蒂去籽，切成细丝；鸡蛋加一半盐打散。不吃辣请选择甜椒。",
+        "炒锅中火加入约三分之二的油，倒入蛋液，待底部凝固后推散，炒至没有流动蛋液，盛出备用。",
+        "锅中加剩余油，放青椒，中大火翻炒约 2—3 分钟，至青椒变软、熟透。偏干时沿锅边加入 1 汤匙水。",
+        "倒回鸡蛋，加剩下的盐，翻炒约 1 分钟至均匀。有小葱可撒葱花，关火装盘。"
+      ],
+      "description": "青椒清香，鸡蛋鲜嫩，冰箱里的经典搭档",
+      "equipment": "炒锅",
+      "servings": 2,
+      "materials": {
+        "main": [
+          {
+            "id": "qing_jiao",
+            "amount": 250,
+            "unit": "克",
+            "note": "去蒂去籽后的重量；大青椒和细长椒大小不同，别只按个数。"
+          },
+          {
+            "id": "ji_dan",
+            "amount": 3,
+            "unit": "个",
+            "note": "普通大小鸡蛋；按人数换算时取整颗。"
+          }
+        ],
+        "seasonings": [
+          {
+            "id": "shi_yong_you",
+            "amount": 15,
+            "unit": "毫升"
+          },
+          {
+            "id": "yan",
+            "amount": 2,
+            "unit": "克",
+            "note": "先少放，熟后尝味再补；加生抽、蚝油等咸味调料时减盐。"
+          }
+        ],
+        "optional": [
+          {
+            "id": "xiao_cong",
+            "amount": 1,
+            "unit": "根",
+            "note": "可不放，主要添葱香和颜色。"
+          }
+        ]
+      },
+      "tip": "鸡蛋先炒好盛出，最后回锅，口感更嫩。",
+      "spicy": false,
+      "categories": [
+        "stirfry"
+      ],
+      "portionNote": "这是一道菜的参考量，建议搭配米饭和其他菜；不是每人一整份。"
+    },
+    {
+      "id": "dish_qingjiao_rousi",
+      "name": "青椒肉丝",
+      "emoji": "🌶️",
+      "required": [
+        "qing_jiao",
+        "li_ji_rou"
+      ],
+      "optional": [
+        "sheng_chou",
+        "dian_fen",
+        "suan"
+      ],
+      "seasonings": [
+        "yan",
+        "shi_yong_you"
+      ],
+      "tags": [
+        "快手",
+        "荤",
+        "下饭"
+      ],
+      "timeMin": 15,
+      "difficulty": 1,
+      "steps": [
+        "里脊肉切细丝，青椒去籽切丝。肉丝抓一点盐即可，赶时间不用腌；有淀粉时可加淀粉和 1 汤匙水抓匀，让肉更滑嫩。",
+        "炒锅中火加入三分之二的油，下肉丝快速划散，炒至熟透后盛出，避免反复久炒变老。",
+        "加入剩余油，直接放青椒翻炒约 2 分钟至熟；有蒜时可先炒香蒜末，没有就跳过。",
+        "回锅肉丝，加剩余盐，炒匀约 1 分钟即可。有生抽可少量加入提鲜，同时减少盐；确认肉丝熟透后装盘。"
+      ],
+      "description": "青椒、肉丝、油盐就能炒，不腌也好吃",
+      "equipment": "炒锅",
+      "servings": 2,
+      "materials": {
+        "main": [
+          {
+            "id": "qing_jiao",
+            "amount": 250,
+            "unit": "克",
+            "note": "去蒂去籽后的重量；大青椒和细长椒大小不同，别只按个数。"
+          },
+          {
+            "id": "li_ji_rou",
+            "amount": 200,
+            "unit": "克"
+          }
+        ],
+        "seasonings": [
+          {
+            "id": "yan",
+            "amount": 1,
+            "unit": "克",
+            "note": "先少放，熟后尝味再补；加生抽、蚝油等咸味调料时减盐。"
+          },
+          {
+            "id": "shi_yong_you",
+            "amount": 15,
+            "unit": "毫升"
+          }
+        ],
+        "optional": [
+          {
+            "id": "sheng_chou",
+            "amount": 10,
+            "unit": "毫升",
+            "note": "可不放，用菜谱里的盐调味就行；加了生抽要少放盐。"
+          },
+          {
+            "id": "dian_fen",
+            "amount": 5,
+            "unit": "克",
+            "note": "可不放，肉丝少一点滑嫩；切细、炒熟及时盛出即可，不必专门买。"
+          },
+          {
+            "id": "suan",
+            "amount": 2,
+            "unit": "瓣",
+            "note": "可不放，少一点蒜香，直接炒主料就行。"
+          }
+        ]
+      },
+      "tip": "淀粉、生抽、蒜都可不放。肉切细、炒熟后及时出锅，别反复久炒；不吃辣请选择甜椒。",
+      "spicy": false,
+      "categories": [
+        "stirfry"
+      ],
+      "portionNote": "这是一道菜的参考量，建议搭配米饭和其他菜；不是每人一整份。"
+    },
+    {
+      "id": "dish_kele_jichi",
+      "name": "可乐鸡翅",
+      "emoji": "🍗",
+      "required": [
+        "ji_chi",
+        "ke_le"
+      ],
+      "optional": [
+        "lao_chou",
+        "jiang"
+      ],
+      "seasonings": [
+        "sheng_chou"
+      ],
+      "tags": [
+        "硬菜",
+        "荤",
+        "甜"
+      ],
+      "timeMin": 35,
+      "difficulty": 1,
+      "steps": [
+        "鸡翅完全解冻，表面擦干，两面各划两刀；有姜再切几片，没有就省略。",
+        "不粘锅中小火预热，放鸡翅慢煎，每面约 3 分钟，至表面金黄、析出油脂。",
+        "加入生抽、可乐；有姜片、老抽再加入，没有也能做。液体至少到鸡翅的三分之二高，不足时补热水。",
+        "煮开后转中小火，加盖焖约 20 分钟，中途翻面并检查水量。",
+        "确认最厚处完全熟透、无生肉后开盖，中火收汁，持续翻动防止糖汁糊底。"
+      ],
+      "description": "甜咸浓汁，拌饭也很香",
+      "equipment": "炒锅",
+      "servings": 2,
+      "materials": {
+        "main": [
+          {
+            "id": "ji_chi",
+            "amount": 8,
+            "unit": "个",
+            "note": "按鸡翅中计数，不是整只鸡翅。"
+          },
+          {
+            "id": "ke_le",
+            "amount": 300,
+            "unit": "毫升"
+          }
+        ],
+        "seasonings": [
+          {
+            "id": "sheng_chou",
+            "amount": 15,
+            "unit": "毫升"
+          }
+        ],
+        "optional": [
+          {
+            "id": "lao_chou",
+            "amount": 3,
+            "unit": "毫升",
+            "note": "可不放，颜色浅一点，不影响做熟。"
+          },
+          {
+            "id": "jiang",
+            "amount": 10,
+            "unit": "克",
+            "note": "可不放，少一点姜香；鸡翅处理干净、煎香就行。"
+          }
+        ]
+      },
+      "tip": "收汁不用大火猛烧，锅里留一点汁更好吃。",
+      "spicy": false,
+      "categories": [
+        "braise"
+      ],
+      "portionNote": "这是一道菜的参考量，建议搭配米饭和其他菜；不是每人一整份。"
+    },
+    {
+      "id": "dish_suanxiang_xiaren",
+      "name": "蒜蓉虾仁",
+      "emoji": "🦐",
+      "required": [
+        "xia"
+      ],
+      "optional": [
+        "bai_hu_jiao",
+        "xiao_cong"
+      ],
+      "seasonings": [
+        "suan",
+        "yan",
+        "shi_yong_you"
+      ],
+      "tags": [
+        "快手",
+        "荤",
+        "清淡"
+      ],
+      "timeMin": 20,
+      "difficulty": 1,
+      "steps": [
+        "虾去头去壳去虾线，洗净沥干；蒜切末。冷冻虾仁先完全解冻。",
+        "虾仁加一半盐抓匀，有白胡椒粉可少量加入，静置 5 分钟。",
+        "炒锅中火放油，下蒜末炒香约 15 秒。",
+        "转中大火下虾仁，翻炒约 3—5 分钟，至虾肉内部完全不透明、熟透，按虾大小调整时间。",
+        "加剩余盐炒匀，可撒葱花，及时出锅。"
+      ],
+      "description": "蒜香鲜甜，工作日晚餐",
+      "equipment": "炒锅",
+      "servings": 2,
+      "materials": {
+        "main": [
+          {
+            "id": "xia",
+            "amount": 300,
+            "unit": "克",
+            "note": "去头去壳后的虾仁重量。"
+          }
+        ],
+        "seasonings": [
+          {
+            "id": "suan",
+            "amount": 4,
+            "unit": "瓣"
+          },
+          {
+            "id": "yan",
+            "amount": 2,
+            "unit": "克",
+            "note": "先少放，熟后尝味再补；加生抽、蚝油等咸味调料时减盐。"
+          },
+          {
+            "id": "shi_yong_you",
+            "amount": 10,
+            "unit": "毫升"
+          }
+        ],
+        "optional": [
+          {
+            "id": "bai_hu_jiao",
+            "amount": 0.5,
+            "unit": "克",
+            "note": "可不放，少一点胡椒香。"
+          },
+          {
+            "id": "xiao_cong",
+            "amount": 1,
+            "unit": "根",
+            "note": "可不放，主要添葱香和颜色。"
+          }
+        ]
+      },
+      "tip": "这里的用量按去壳虾仁计算。",
+      "spicy": false,
+      "categories": [
+        "stirfry"
+      ],
+      "portionNote": "这是一道菜的参考量，建议搭配米饭和其他菜；不是每人一整份。"
+    },
+    {
+      "id": "dish_mapo_doufu",
+      "name": "麻婆豆腐",
+      "emoji": "🥢",
+      "required": [
+        "dou_fu"
+      ],
+      "optional": [
+        "xiao_cong",
+        "rou_mo",
+        "sheng_chou",
+        "dian_fen",
+        "hua_jiao"
+      ],
+      "seasonings": [
+        "dou_ban_jiang",
+        "shi_yong_you"
+      ],
+      "tags": [
+        "川菜",
+        "荤",
+        "下饭",
+        "辣"
+      ],
+      "timeMin": 25,
+      "difficulty": 1,
+      "steps": [
+        "豆腐切约 2 厘米方块。想省事可直接下锅；想让豆腐更不易碎，可先在沸水中煮 2 分钟再捞出。",
+        "炒锅中火放油，有肉末就先炒散并炒熟；没有肉末直接下豆瓣酱，炒香约 1 分钟。",
+        "加入清水 150—200 毫升（2 人份）和豆腐，煮开后小火煮约 6 分钟。有生抽可少量加，豆瓣酱本身有咸味，不加也行。",
+        "不放淀粉就开盖稍收汁，留一点汤拌饭；想汤汁更浓，再把淀粉加 2 汤匙水搅匀，少量淋入并煮开。",
+        "有花椒可碾碎撒入，有葱花可撒一点；都没有也可直接出锅。不放花椒是家常辣豆腐口味。"
+      ],
+      "description": "麻辣鲜香，经典下饭菜",
+      "equipment": "炒锅",
+      "servings": 2,
+      "materials": {
+        "main": [
+          {
+            "id": "dou_fu",
+            "amount": 400,
+            "unit": "克"
+          }
+        ],
+        "seasonings": [
+          {
+            "id": "dou_ban_jiang",
+            "amount": 15,
+            "unit": "克"
+          },
+          {
+            "id": "shi_yong_you",
+            "amount": 10,
+            "unit": "毫升"
+          }
+        ],
+        "optional": [
+          {
+            "id": "xiao_cong",
+            "amount": 1,
+            "unit": "根",
+            "note": "可不放，主要添葱香和颜色。"
+          },
+          {
+            "id": "rou_mo",
+            "amount": 100,
+            "unit": "克",
+            "note": "可不放，做成素版，少一点肉香。"
+          },
+          {
+            "id": "sheng_chou",
+            "amount": 5,
+            "unit": "毫升",
+            "note": "可不放，豆瓣酱已有咸味；加生抽前先尝味。"
+          },
+          {
+            "id": "dian_fen",
+            "amount": 5,
+            "unit": "克",
+            "note": "可不放，汤汁稀一点；开盖稍收汁即可。"
+          },
+          {
+            "id": "hua_jiao",
+            "amount": 1,
+            "unit": "克",
+            "note": "可不放，不带麻味，也能好吃。"
+          }
+        ]
+      },
+      "tip": "只用豆腐、豆瓣酱和油也能做。没肉末是素版，没花椒是家常辣豆腐口味；不用淀粉就少加水、略收汁。",
+      "spicy": true,
+      "categories": [
+        "braise"
+      ],
+      "portionNote": "这是一道菜的参考量，建议搭配米饭和其他菜；不是每人一整份。"
+    },
+    {
+      "id": "dish_xihongshi_chaodan",
+      "name": "西红柿炒鸡蛋",
+      "emoji": "🍅",
+      "required": [
+        "xi_hong_shi",
+        "ji_dan"
+      ],
+      "optional": [
+        "bai_tang",
+        "xiao_cong"
+      ],
+      "seasonings": [
+        "shi_yong_you",
+        "yan"
+      ],
+      "tags": [
+        "快手",
+        "家常",
+        "素",
+        "下饭"
+      ],
+      "timeMin": 12,
+      "difficulty": 1,
+      "steps": [
+        "西红柿洗净切成约 2 厘米的小块；鸡蛋打入碗中，加入一半盐打散。",
+        "炒锅中火预热，倒入约三分之二的油，倒入蛋液。待底部凝固后轻轻推散，炒至没有流动蛋液，盛出。",
+        "锅中加入剩下的油，下西红柿中火炒 3—4 分钟，炒至变软出汁；偏干时加 2 汤匙水。",
+        "倒回鸡蛋，加入剩下的盐，翻炒约 1 分钟。喜欢偏甜口可加白糖；有小葱时撒葱花，关火装盘。"
+      ],
+      "description": "酸甜多汁，第一道拿手菜",
+      "equipment": "炒锅",
+      "servings": 2,
+      "materials": {
+        "main": [
+          {
+            "id": "xi_hong_shi",
+            "amount": 350,
+            "unit": "克",
+            "note": "去蒂后的重量；大果少拿，小果多拿。"
+          },
+          {
+            "id": "ji_dan",
+            "amount": 3,
+            "unit": "个",
+            "note": "普通大小鸡蛋；按人数换算时取整颗。"
+          }
+        ],
+        "seasonings": [
+          {
+            "id": "shi_yong_you",
+            "amount": 15,
+            "unit": "毫升"
+          },
+          {
+            "id": "yan",
+            "amount": 2,
+            "unit": "克",
+            "note": "先少放，熟后尝味再补；加生抽、蚝油等咸味调料时减盐。"
+          }
+        ],
+        "optional": [
+          {
+            "id": "bai_tang",
+            "amount": 2,
+            "unit": "克",
+            "note": "可不放，少一点甜味，保留食材本身的味道。"
+          },
+          {
+            "id": "xiao_cong",
+            "amount": 1,
+            "unit": "根",
+            "note": "可不放，主要添葱香和颜色。"
+          }
+        ]
+      },
+      "tip": "西红柿先炒出汁再回锅鸡蛋，成品更柔软。",
+      "spicy": false,
+      "categories": [
+        "stirfry"
+      ],
+      "portionNote": "这是一道菜的参考量，建议搭配米饭和其他菜；不是每人一整份。"
+    },
+    {
+      "id": "dish_fanqie_jidan_tang",
+      "name": "番茄鸡蛋汤",
+      "emoji": "🥣",
+      "required": [
+        "xi_hong_shi",
+        "ji_dan"
+      ],
+      "optional": [
+        "xiao_cong",
+        "zi_cai",
+        "shi_yong_you"
+      ],
+      "seasonings": [
+        "yan"
+      ],
+      "tags": [
+        "汤",
+        "快手",
+        "清淡"
+      ],
+      "timeMin": 12,
+      "difficulty": 1,
+      "steps": [
+        "西红柿切小块，鸡蛋打散；准备清水 600 毫升（2 人份）。",
+        "省事做法：直接把西红柿放进水里，煮开后中火煮约 5 分钟至变软。有油且想更香，可先炒西红柿约 3 分钟，再加水煮开。",
+        "保持汤微沸，将蛋液沿锅边细细淋入，等待约 20 秒定形，再轻推散，煮至蛋花完全凝固。",
+        "加盐调味就能出锅。有紫菜再撕碎加入煮软，有小葱再撒葱花；没有都可以省略。"
+      ],
+      "description": "一碗热汤，清爽又暖胃",
+      "equipment": "煮锅",
+      "servings": 2,
+      "materials": {
+        "main": [
+          {
+            "id": "xi_hong_shi",
+            "amount": 250,
+            "unit": "克",
+            "note": "去蒂后的重量；大果少拿，小果多拿。"
+          },
+          {
+            "id": "ji_dan",
+            "amount": 2,
+            "unit": "个",
+            "note": "普通大小鸡蛋；按人数换算时取整颗。"
+          }
+        ],
+        "seasonings": [
+          {
+            "id": "yan",
+            "amount": 2,
+            "unit": "克",
+            "note": "先少放，熟后尝味再补；加生抽、蚝油等咸味调料时减盐。"
+          }
+        ],
+        "optional": [
+          {
+            "id": "xiao_cong",
+            "amount": 1,
+            "unit": "根",
+            "note": "可不放，主要添葱香和颜色。"
+          },
+          {
+            "id": "zi_cai",
+            "amount": 2,
+            "unit": "克",
+            "note": "可不放，番茄和鸡蛋本身就有鲜味。"
+          },
+          {
+            "id": "shi_yong_you",
+            "amount": 5,
+            "unit": "毫升",
+            "note": "可不放，直接用水煮；先用油炒番茄会更香。"
+          }
+        ]
+      },
+      "tip": "淋蛋液后别立刻搅拌，蛋花更完整。",
+      "spicy": false,
+      "categories": [
+        "soup"
+      ],
+      "portionNote": "这是一道菜的参考量，建议搭配米饭和其他菜；不是每人一整份。"
+    },
+    {
+      "id": "dish_culiu_tudousi",
+      "name": "醋溜土豆丝",
+      "emoji": "🥔",
+      "required": [
+        "tu_dou"
+      ],
+      "optional": [
+        "gan_la_jiao",
+        "hua_jiao"
+      ],
+      "seasonings": [
+        "shi_yong_you",
+        "yan",
+        "cu"
+      ],
+      "tags": [
+        "快手",
+        "素",
+        "下饭",
+        "酸"
+      ],
+      "timeMin": 18,
+      "difficulty": 1,
+      "steps": [
+        "土豆去皮切细丝，用清水冲洗 2 次，洗去表面淀粉，沥干备用。",
+        "炒锅中火加油；喜欢香辣口且有材料时，放花椒和剪段的干辣椒，小火炒香后捞出花椒。",
+        "转大火放入土豆丝，持续翻炒约 3—5 分钟，中途沿锅边加少量水，避免炒焦。",
+        "土豆丝熟透、没有生硬芯时，沿锅边加入醋，放盐，快速炒匀出锅。"
+      ],
+      "description": "清脆酸香，很下饭",
+      "equipment": "炒锅",
+      "servings": 2,
+      "materials": {
+        "main": [
+          {
+            "id": "tu_dou",
+            "amount": 400,
+            "unit": "克",
+            "note": "去皮后的重量。"
+          }
+        ],
+        "seasonings": [
+          {
+            "id": "shi_yong_you",
+            "amount": 15,
+            "unit": "毫升"
+          },
+          {
+            "id": "yan",
+            "amount": 2,
+            "unit": "克",
+            "note": "先少放，熟后尝味再补；加生抽、蚝油等咸味调料时减盐。"
+          },
+          {
+            "id": "cu",
+            "amount": 10,
+            "unit": "毫升"
+          }
+        ],
+        "optional": [
+          {
+            "id": "gan_la_jiao",
+            "amount": 2,
+            "unit": "个",
+            "note": "可不放，不辣也好吃。"
+          },
+          {
+            "id": "hua_jiao",
+            "amount": 10,
+            "unit": "粒",
+            "note": "可不放，不带麻味，也能好吃。"
+          }
+        ]
+      },
+      "tip": "选“不吃辣”时不放可选的干辣椒。",
+      "spicy": false,
+      "categories": [
+        "stirfry"
+      ],
+      "portionNote": "这是一道菜的参考量，建议搭配米饭和其他菜；不是每人一整份。"
+    },
+    {
+      "id": "dish_suanrong_shengcai",
+      "name": "蒜蓉生菜",
+      "emoji": "🥬",
+      "required": [
+        "sheng_cai"
+      ],
+      "optional": [
+        "hao_you"
+      ],
+      "seasonings": [
+        "suan",
+        "shi_yong_you",
+        "yan"
+      ],
+      "tags": [
+        "快手",
+        "素",
+        "清淡"
+      ],
+      "timeMin": 10,
+      "difficulty": 1,
+      "steps": [
+        "生菜掰开洗净，沥干水分；蒜去皮切末。",
+        "炒锅中火加油，放蒜末炒约 15 秒，闻到香味即可，不要炒黑。",
+        "转大火加入生菜，持续翻炒约 1—2 分钟，至叶片变软、菜梗熟而略脆。",
+        "加盐翻匀后出锅。有蚝油可少量加入，同时减少盐。"
+      ],
+      "description": "蒜香浓，吃起来很轻盈",
+      "equipment": "炒锅",
+      "servings": 2,
+      "materials": {
+        "main": [
+          {
+            "id": "sheng_cai",
+            "amount": 300,
+            "unit": "克"
+          }
+        ],
+        "seasonings": [
+          {
+            "id": "suan",
+            "amount": 3,
+            "unit": "瓣"
+          },
+          {
+            "id": "shi_yong_you",
+            "amount": 10,
+            "unit": "毫升"
+          },
+          {
+            "id": "yan",
+            "amount": 1,
+            "unit": "克",
+            "note": "先少放，熟后尝味再补；加生抽、蚝油等咸味调料时减盐。"
+          }
+        ],
+        "optional": [
+          {
+            "id": "hao_you",
+            "amount": 5,
+            "unit": "毫升",
+            "note": "可不放，用盐调味即可；加蚝油时少放盐。"
+          }
+        ]
+      },
+      "tip": "菜叶水分沥干，炒出的菜不会水汪汪。",
+      "spicy": false,
+      "categories": [
+        "stirfry"
+      ],
+      "portionNote": "这是一道菜的参考量，建议搭配米饭和其他菜；不是每人一整份。"
+    },
+    {
+      "id": "dish_liangban_huanggua",
+      "name": "凉拌黄瓜",
+      "emoji": "🥒",
+      "required": [
+        "huang_gua"
+      ],
+      "optional": [
+        "xiang_you",
+        "bai_tang",
+        "xiang_cai",
+        "suan",
+        "sheng_chou"
+      ],
+      "seasonings": [
+        "cu",
+        "yan"
+      ],
+      "tags": [
+        "凉菜",
+        "快手",
+        "清淡",
+        "素"
+      ],
+      "timeMin": 10,
+      "difficulty": 1,
+      "steps": [
+        "黄瓜充分洗净，使用干净的熟食砧板和刀具拍裂，切成约 3 厘米的段。",
+        "加盐拌匀，静置 5 分钟，再倒掉析出的水。",
+        "加入醋拌匀，就是清爽的基础版。有蒜末、生抽、香油、白糖时可按口味加，放生抽时少放盐。",
+        "有香菜再洗净切段拌入，没有就省略。拌好后尽快食用。"
+      ],
+      "description": "清爽开胃，省心小凉菜",
+      "equipment": "免开火",
+      "servings": 2,
+      "materials": {
+        "main": [
+          {
+            "id": "huang_gua",
+            "amount": 400,
+            "unit": "克",
+            "note": "去两端后的重量。"
+          }
+        ],
+        "seasonings": [
+          {
+            "id": "cu",
+            "amount": 10,
+            "unit": "毫升"
+          },
+          {
+            "id": "yan",
+            "amount": 1,
+            "unit": "克",
+            "note": "先少放，熟后尝味再补；加生抽、蚝油等咸味调料时减盐。"
+          }
+        ],
+        "optional": [
+          {
+            "id": "xiang_you",
+            "amount": 3,
+            "unit": "毫升",
+            "note": "可不放，少一点芝麻香。"
+          },
+          {
+            "id": "bai_tang",
+            "amount": 2,
+            "unit": "克",
+            "note": "可不放，少一点甜味，保留食材本身的味道。"
+          },
+          {
+            "id": "xiang_cai",
+            "amount": 1,
+            "unit": "根",
+            "note": "可不放，只是增加香气。"
+          },
+          {
+            "id": "suan",
+            "amount": 2,
+            "unit": "瓣",
+            "note": "可不放，少一点蒜香，直接炒主料就行。"
+          },
+          {
+            "id": "sheng_chou",
+            "amount": 10,
+            "unit": "毫升",
+            "note": "可不放，用菜谱里的盐调味就行；加了生抽要少放盐。"
+          }
+        ]
+      },
+      "tip": "先腌后倒水，拌好的黄瓜更入味。",
+      "spicy": false,
+      "categories": [
+        "cold"
+      ],
+      "portionNote": "这是一道菜的参考量，建议搭配米饭和其他菜；不是每人一整份。"
+    },
+    {
+      "id": "dish_zicai_danhua_tang",
+      "name": "紫菜蛋花汤",
+      "emoji": "🍜",
+      "required": [
+        "zi_cai",
+        "ji_dan"
+      ],
+      "optional": [
+        "xiang_you",
+        "xia_pi",
+        "xiao_cong"
+      ],
+      "seasonings": [
+        "yan"
+      ],
+      "tags": [
+        "汤",
+        "快手",
+        "清淡",
+        "兜底"
+      ],
+      "timeMin": 8,
+      "difficulty": 1,
+      "steps": [
+        "紫菜撕成小片，按包装说明清洗处理；鸡蛋打散。准备清水 600 毫升（2 人份）。",
+        "锅中把水煮开，放紫菜，煮约 1 分钟；有虾皮时一起加入。",
+        "转中火保持微沸，缓缓淋入蛋液，等 20 秒再推散，煮至蛋花完全凝固。",
+        "加盐调味后关火，可滴香油、撒葱花。使用咸虾皮时适当减盐。"
+      ],
+      "description": "十分钟不到的一碗鲜",
+      "equipment": "煮锅",
+      "servings": 2,
+      "materials": {
+        "main": [
+          {
+            "id": "zi_cai",
+            "amount": 5,
+            "unit": "克",
+            "note": "干紫菜重量。"
+          },
+          {
+            "id": "ji_dan",
+            "amount": 2,
+            "unit": "个",
+            "note": "普通大小鸡蛋；按人数换算时取整颗。"
+          }
+        ],
+        "seasonings": [
+          {
+            "id": "yan",
+            "amount": 2,
+            "unit": "克",
+            "note": "先少放，熟后尝味再补；加生抽、蚝油等咸味调料时减盐。"
+          }
+        ],
+        "optional": [
+          {
+            "id": "xiang_you",
+            "amount": 3,
+            "unit": "毫升",
+            "note": "可不放，少一点芝麻香。"
+          },
+          {
+            "id": "xia_pi",
+            "amount": 5,
+            "unit": "克",
+            "note": "可不放，汤少一点海鲜味。"
+          },
+          {
+            "id": "xiao_cong",
+            "amount": 1,
+            "unit": "根",
+            "note": "可不放，主要添葱香和颜色。"
+          }
+        ]
+      },
+      "tip": "紫菜、鸡蛋和盐就够了，虾皮、香油、葱花都可以省。",
+      "spicy": false,
+      "categories": [
+        "soup"
+      ],
+      "portionNote": "这是一道菜的参考量，建议搭配米饭和其他菜；不是每人一整份。"
+    },
+    {
+      "id": "dish_muer_chaodan",
+      "name": "木耳炒鸡蛋",
+      "emoji": "🥚",
+      "required": [
+        "mu_er",
+        "ji_dan"
+      ],
+      "optional": [
+        "xiao_cong",
+        "sheng_chou"
+      ],
+      "seasonings": [
+        "shi_yong_you",
+        "yan"
+      ],
+      "tags": [
+        "家常",
+        "素",
+        "快手"
+      ],
+      "timeMin": 25,
+      "difficulty": 1,
+      "steps": [
+        "木耳用量为干重。按包装要求充分泡发，去掉根部、洗净撕小朵；泡发耗时另计。鸡蛋打散。",
+        "锅中加水煮开，下木耳煮约 3 分钟，捞出沥干。",
+        "炒锅中火加入约三分之二的油，把蛋液炒至完全凝固后盛出。",
+        "加剩余油，放木耳翻炒约 2 分钟；回锅鸡蛋，加盐再炒约 1 分钟。有生抽可少量加并减盐，有葱花再撒，没有也好吃。"
+      ],
+      "description": "木耳爽脆，鸡蛋蓬松",
+      "equipment": "炒锅",
+      "servings": 2,
+      "materials": {
+        "main": [
+          {
+            "id": "mu_er",
+            "amount": 10,
+            "unit": "克",
+            "note": "干木耳重量，泡发后再做，不是泡发后的重量。"
+          },
+          {
+            "id": "ji_dan",
+            "amount": 3,
+            "unit": "个",
+            "note": "普通大小鸡蛋；按人数换算时取整颗。"
+          }
+        ],
+        "seasonings": [
+          {
+            "id": "shi_yong_you",
+            "amount": 15,
+            "unit": "毫升"
+          },
+          {
+            "id": "yan",
+            "amount": 2,
+            "unit": "克",
+            "note": "先少放，熟后尝味再补；加生抽、蚝油等咸味调料时减盐。"
+          }
+        ],
+        "optional": [
+          {
+            "id": "xiao_cong",
+            "amount": 1,
+            "unit": "根",
+            "note": "可不放，主要添葱香和颜色。"
+          },
+          {
+            "id": "sheng_chou",
+            "amount": 5,
+            "unit": "毫升",
+            "note": "可不放，用菜谱里的盐调味就行；加了生抽要少放盐。"
+          }
+        ]
+      },
+      "tip": "木耳充分泡发后及时烹调，不使用有异味或黏滑的木耳。",
+      "spicy": false,
+      "categories": [
+        "stirfry"
+      ],
+      "portionNote": "这是一道菜的参考量，建议搭配米饭和其他菜；不是每人一整份。"
+    },
+    {
+      "id": "dish_dan_chaofan",
+      "name": "蛋炒饭",
+      "emoji": "🍚",
+      "required": [
+        "mi_fan",
+        "ji_dan"
+      ],
+      "optional": [
+        "hu_luo_bo",
+        "xiao_cong",
+        "huo_tui_chang",
+        "sheng_chou"
+      ],
+      "seasonings": [
+        "shi_yong_you",
+        "yan"
+      ],
+      "tags": [
+        "主食",
+        "快手",
+        "下饭"
+      ],
+      "timeMin": 15,
+      "difficulty": 1,
+      "steps": [
+        "准备煮熟的米饭，用饭勺拨散；鸡蛋打散。有胡萝卜、火腿肠再切丁，没有就只用鸡蛋。",
+        "炒锅中火加油，倒入蛋液，炒至凝固成小块后盛出。",
+        "有胡萝卜丁时先炒约 2 分钟，少量加水焖熟；有火腿丁再加入。没配菜就直接跳到炒饭。",
+        "倒入米饭，转中大火翻炒 3—5 分钟，炒散并彻底热透。",
+        "回锅鸡蛋，加盐，再翻炒约 1 分钟。有生抽可少量加入，同时减盐；有葱花再撒，没有就直接出锅。"
+      ],
+      "description": "把一碗米饭变成一顿饭",
+      "equipment": "炒锅",
+      "servings": 2,
+      "materials": {
+        "main": [
+          {
+            "id": "mi_fan",
+            "amount": 400,
+            "unit": "克",
+            "note": "煮熟的米饭重量，不是生米。"
+          },
+          {
+            "id": "ji_dan",
+            "amount": 2,
+            "unit": "个",
+            "note": "普通大小鸡蛋；按人数换算时取整颗。"
+          }
+        ],
+        "seasonings": [
+          {
+            "id": "shi_yong_you",
+            "amount": 15,
+            "unit": "毫升"
+          },
+          {
+            "id": "yan",
+            "amount": 1,
+            "unit": "克",
+            "note": "先少放，熟后尝味再补；加生抽、蚝油等咸味调料时减盐。"
+          }
+        ],
+        "optional": [
+          {
+            "id": "hu_luo_bo",
+            "amount": 50,
+            "unit": "克",
+            "note": "可不放，主要增加颜色和口感。"
+          },
+          {
+            "id": "xiao_cong",
+            "amount": 1,
+            "unit": "根",
+            "note": "可不放，主要添葱香和颜色。"
+          },
+          {
+            "id": "huo_tui_chang",
+            "amount": 1,
+            "unit": "根",
+            "note": "可不放，鸡蛋和米饭就能炒得好吃。"
+          },
+          {
+            "id": "sheng_chou",
+            "amount": 5,
+            "unit": "毫升",
+            "note": "可不放，用菜谱里的盐调味就行；加了生抽要少放盐。"
+          }
+        ]
+      },
+      "tip": "米饭需已煮熟；使用剩饭时选择及时冷藏、保存得当的米饭。",
+      "spicy": false,
+      "categories": [
+        "staple"
+      ],
+      "portionNote": "按每人约 200 克熟米饭估算，饭量大可增加；原味炒饭建议搭配菜。"
+    },
+    {
+      "id": "dish_qingchao_xilanhua",
+      "name": "清炒西兰花",
+      "emoji": "🥦",
+      "required": [
+        "xi_lan_hua"
+      ],
+      "optional": [
+        "hu_luo_bo",
+        "suan"
+      ],
+      "seasonings": [
+        "yan",
+        "shi_yong_you"
+      ],
+      "tags": [
+        "素",
+        "清淡",
+        "快手"
+      ],
+      "timeMin": 15,
+      "difficulty": 1,
+      "steps": [
+        "西兰花切成大小相近的小朵，洗净。有蒜再切末，有胡萝卜再切薄片，没有都可以省略。",
+        "锅中水煮开，下西兰花煮约 2 分钟；有胡萝卜片可一起煮，捞出沥干。",
+        "炒锅中火加油，直接下西兰花翻炒 1—2 分钟；有蒜末可先炒香再下菜。",
+        "加盐炒匀，确认菜梗熟透后装盘。偏干时沿锅边加入 1 汤匙水。"
+      ],
+      "description": "一盘翠绿，简单好吃",
+      "equipment": "炒锅",
+      "servings": 2,
+      "materials": {
+        "main": [
+          {
+            "id": "xi_lan_hua",
+            "amount": 300,
+            "unit": "克"
+          }
+        ],
+        "seasonings": [
+          {
+            "id": "yan",
+            "amount": 2,
+            "unit": "克",
+            "note": "先少放，熟后尝味再补；加生抽、蚝油等咸味调料时减盐。"
+          },
+          {
+            "id": "shi_yong_you",
+            "amount": 10,
+            "unit": "毫升"
+          }
+        ],
+        "optional": [
+          {
+            "id": "hu_luo_bo",
+            "amount": 50,
+            "unit": "克",
+            "note": "可不放，主要增加颜色和口感。"
+          },
+          {
+            "id": "suan",
+            "amount": 2,
+            "unit": "瓣",
+            "note": "可不放，少一点蒜香，直接炒主料就行。"
+          }
+        ]
+      },
+      "tip": "切成相近的小朵，受热才会均匀。",
+      "spicy": false,
+      "categories": [
+        "stirfry"
+      ],
+      "portionNote": "这是一道菜的参考量，建议搭配米饭和其他菜；不是每人一整份。"
+    },
+    {
+      "id": "dish_yangcong_chaodan",
+      "name": "洋葱炒鸡蛋",
+      "emoji": "🧅",
+      "required": [
+        "yang_cong",
+        "ji_dan"
+      ],
+      "optional": [
+        "sheng_chou"
+      ],
+      "seasonings": [
+        "yan",
+        "shi_yong_you"
+      ],
+      "tags": [
+        "快手",
+        "素",
+        "家常"
+      ],
+      "timeMin": 15,
+      "difficulty": 1,
+      "steps": [
+        "洋葱去外皮切细丝；鸡蛋加一半盐打散。",
+        "炒锅中火加入约三分之二的油，倒入蛋液，炒至完全凝固后盛出。",
+        "加入剩余油和洋葱，中火翻炒约 3—4 分钟，至洋葱变软、略透明。",
+        "回锅鸡蛋，加入剩余盐，翻炒约 1 分钟即可。有生抽再少量加入并减盐，不放也有洋葱的甜香。"
+      ],
+      "description": "洋葱微甜，鸡蛋鲜嫩",
+      "equipment": "炒锅",
+      "servings": 2,
+      "materials": {
+        "main": [
+          {
+            "id": "yang_cong",
+            "amount": 250,
+            "unit": "克",
+            "note": "去皮后的重量。"
+          },
+          {
+            "id": "ji_dan",
+            "amount": 3,
+            "unit": "个",
+            "note": "普通大小鸡蛋；按人数换算时取整颗。"
+          }
+        ],
+        "seasonings": [
+          {
+            "id": "yan",
+            "amount": 2,
+            "unit": "克",
+            "note": "先少放，熟后尝味再补；加生抽、蚝油等咸味调料时减盐。"
+          },
+          {
+            "id": "shi_yong_you",
+            "amount": 15,
+            "unit": "毫升"
+          }
+        ],
+        "optional": [
+          {
+            "id": "sheng_chou",
+            "amount": 5,
+            "unit": "毫升",
+            "note": "可不放，用菜谱里的盐调味就行；加了生抽要少放盐。"
+          }
+        ]
+      },
+      "tip": "洋葱炒软后甜味更明显，不喜欢辛辣口可以多炒一会儿。",
+      "spicy": false,
+      "categories": [
+        "stirfry"
+      ],
+      "portionNote": "这是一道菜的参考量，建议搭配米饭和其他菜；不是每人一整份。"
+    },
+    {
+      "id": "dish_zheng_dangeng",
+      "name": "蒸蛋羹",
+      "emoji": "🥚",
+      "required": [
+        "ji_dan"
+      ],
+      "optional": [
+        "xiang_you",
+        "sheng_chou",
+        "xiao_cong"
+      ],
+      "seasonings": [
+        "yan"
+      ],
+      "tags": [
+        "兜底",
+        "快手",
+        "清淡",
+        "宝宝"
+      ],
+      "timeMin": 20,
+      "difficulty": 1,
+      "steps": [
+        "鸡蛋打散，加盐。按蛋液体积的 1.5 倍加入温水，搅匀；水不要烫手。",
+        "蛋液过筛倒入浅碗，撇去表面泡沫，盖耐热盘子，防止水滴落入。",
+        "蒸锅加足水煮开，放入蛋液碗，转中火蒸约 12—15 分钟。",
+        "揭盖检查中心应完全凝固、没有流动蛋液；没凝固则继续蒸，每 2 分钟检查一次。",
+        "取出时防烫，可淋生抽和香油、撒葱花。加生抽时少放盐。"
+      ],
+      "description": "细嫩顺滑，温柔的一餐",
+      "equipment": "蒸锅",
+      "servings": 2,
+      "materials": {
+        "main": [
+          {
+            "id": "ji_dan",
+            "amount": 3,
+            "unit": "个",
+            "note": "普通大小鸡蛋；按人数换算时取整颗。"
+          }
+        ],
+        "seasonings": [
+          {
+            "id": "yan",
+            "amount": 1,
+            "unit": "克",
+            "note": "先少放，熟后尝味再补；加生抽、蚝油等咸味调料时减盐。"
+          }
+        ],
+        "optional": [
+          {
+            "id": "xiang_you",
+            "amount": 3,
+            "unit": "毫升",
+            "note": "可不放，少一点芝麻香。"
+          },
+          {
+            "id": "sheng_chou",
+            "amount": 5,
+            "unit": "毫升",
+            "note": "可不放，用菜谱里的盐调味就行；加了生抽要少放盐。"
+          },
+          {
+            "id": "xiao_cong",
+            "amount": 1,
+            "unit": "根",
+            "note": "可不放，主要添葱香和颜色。"
+          }
+        ]
+      },
+      "tip": "多人份请分装浅碗，时间按实际凝固情况调整。",
+      "spicy": false,
+      "categories": [
+        "soup",
+        "steam"
+      ],
+      "portionNote": "这是一道菜的参考量，建议搭配米饭和其他菜；不是每人一整份。"
+    },
+    {
+      "id": "dish_fanqie_dun_doufu",
+      "name": "番茄豆腐煲",
+      "emoji": "🍲",
+      "required": [
+        "xi_hong_shi",
+        "dou_fu"
+      ],
+      "optional": [
+        "jin_zhen_gu",
+        "xiao_cong"
+      ],
+      "seasonings": [
+        "yan",
+        "shi_yong_you"
+      ],
+      "tags": [
+        "家常",
+        "素",
+        "下饭"
+      ],
+      "timeMin": 20,
+      "difficulty": 1,
+      "steps": [
+        "西红柿洗净切小块，豆腐切成约 2 厘米方块。有金针菇时切掉根部洗净。",
+        "锅中加油，中火炒西红柿约 4 分钟，至软烂出汁。",
+        "加入豆腐和清水 200 毫升（2 人份），轻推均匀，煮开后转小火煮 6—8 分钟。",
+        "有金针菇时在煮豆腐时一起加入，充分煮熟。加盐调味，汤汁略收浓后关火，可撒葱花。"
+      ],
+      "description": "酸甜汤汁，豆腐也下饭",
+      "equipment": "煮锅",
+      "servings": 2,
+      "materials": {
+        "main": [
+          {
+            "id": "xi_hong_shi",
+            "amount": 300,
+            "unit": "克",
+            "note": "去蒂后的重量；大果少拿，小果多拿。"
+          },
+          {
+            "id": "dou_fu",
+            "amount": 300,
+            "unit": "克"
+          }
+        ],
+        "seasonings": [
+          {
+            "id": "yan",
+            "amount": 2,
+            "unit": "克",
+            "note": "先少放，熟后尝味再补；加生抽、蚝油等咸味调料时减盐。"
+          },
+          {
+            "id": "shi_yong_you",
+            "amount": 10,
+            "unit": "毫升"
+          }
+        ],
+        "optional": [
+          {
+            "id": "jin_zhen_gu",
+            "amount": 100,
+            "unit": "克",
+            "note": "可不放，番茄和豆腐足够做一锅。"
+          },
+          {
+            "id": "xiao_cong",
+            "amount": 1,
+            "unit": "根",
+            "note": "可不放，主要添葱香和颜色。"
+          }
+        ]
+      },
+      "tip": "用锅铲轻推代替翻炒，豆腐不容易碎。",
+      "spicy": false,
+      "categories": [
+        "braise"
+      ],
+      "portionNote": "这是一道菜的参考量，建议搭配米饭和其他菜；不是每人一整份。"
+    },
+    {
+      "id": "dish_jian_doufu",
+      "name": "香煎豆腐",
+      "emoji": "🍽️",
+      "description": "主料简单，家常省事",
+      "required": [
+        "dou_fu"
+      ],
+      "seasonings": [
+        "shi_yong_you",
+        "yan"
+      ],
+      "optional": [
+        "sheng_chou",
+        "xiao_cong"
+      ],
+      "tags": [
+        "家常"
+      ],
+      "timeMin": 15,
+      "difficulty": 1,
+      "equipment": "炒锅",
+      "servings": 2,
+      "materials": {
+        "main": [
+          {
+            "id": "dou_fu",
+            "amount": 400,
+            "unit": "克"
+          }
+        ],
+        "seasonings": [
+          {
+            "id": "shi_yong_you",
+            "amount": 10,
+            "unit": "毫升"
+          },
+          {
+            "id": "yan",
+            "amount": 2,
+            "unit": "克",
+            "note": "先少放，熟后尝味再补；加生抽、蚝油等咸味调料时减盐。"
+          }
+        ],
+        "optional": [
+          {
+            "id": "sheng_chou",
+            "amount": 5,
+            "unit": "毫升",
+            "note": "可不放，用盐调味即可；加生抽时少放盐。"
+          },
+          {
+            "id": "xiao_cong",
+            "amount": 1,
+            "unit": "根",
+            "note": "可不放，主要增加葱香和颜色。"
+          }
+        ]
+      },
+      "steps": [
+        "选老豆腐或北豆腐，切成约 1 厘米厚的片，用厨房纸轻轻吸去表面水分。",
+        "不粘锅中火放油，放豆腐铺平，先煎约 3—4 分钟，底面金黄后再翻面。",
+        "另一面再煎约 3 分钟，撒盐，加 2 汤匙水，小火焖约 2 分钟，让豆腐热透入味。",
+        "开盖稍收干水分即可。有生抽可少量加并减盐，有葱花再撒，都没有也能做。"
+      ],
+      "tip": "只有嫩豆腐时建议做清炖豆腐，省去翻面，不容易碎。",
+      "spicy": false,
+      "categories": [
+        "braise"
+      ],
+      "portionNote": "这是一道菜的参考量，建议搭配米饭和其他菜；不是每人一整份。"
+    },
+    {
+      "id": "dish_qingdun_doufu",
+      "name": "清炖豆腐",
+      "emoji": "🍽️",
+      "description": "主料简单，家常省事",
+      "required": [
+        "dou_fu"
+      ],
+      "seasonings": [
+        "yan"
+      ],
+      "optional": [
+        "xiang_you",
+        "xiao_cong"
+      ],
+      "tags": [
+        "家常"
+      ],
+      "timeMin": 12,
+      "difficulty": 1,
+      "equipment": "煮锅",
+      "servings": 2,
+      "materials": {
+        "main": [
+          {
+            "id": "dou_fu",
+            "amount": 400,
+            "unit": "克"
+          }
+        ],
+        "seasonings": [
+          {
+            "id": "yan",
+            "amount": 2,
+            "unit": "克",
+            "note": "先少放，熟后尝味再补；加生抽、蚝油等咸味调料时减盐。"
+          }
+        ],
+        "optional": [
+          {
+            "id": "xiang_you",
+            "amount": 3,
+            "unit": "毫升",
+            "note": "可不放，少一点芝麻香。"
+          },
+          {
+            "id": "xiao_cong",
+            "amount": 1,
+            "unit": "根",
+            "note": "可不放，主要增加葱香和颜色。"
+          }
+        ]
+      },
+      "steps": [
+        "豆腐切约 2 厘米块，老豆腐、嫩豆腐都可以。",
+        "锅中加清水 300 毫升（2 人份），放入豆腐，煮开后转小火。",
+        "加盐，小火煮约 6—8 分钟，轻推几次，让豆腐热透入味，不要大力搅碎。",
+        "连汤盛出。有香油可以滴几滴，有葱花可以撒上，没有都可省略。"
+      ],
+      "tip": "豆腐加盐就能做，少放水更有豆香，汤也可以喝。",
+      "spicy": false,
+      "categories": [
+        "soup",
+        "braise"
+      ],
+      "portionNote": "这是一道菜的参考量，建议搭配米饭和其他菜；不是每人一整份。"
+    },
+    {
+      "id": "dish_chaosui_doufu",
+      "name": "家常炒豆腐",
+      "emoji": "🍽️",
+      "description": "主料简单，家常省事",
+      "required": [
+        "dou_fu"
+      ],
+      "seasonings": [
+        "shi_yong_you",
+        "yan"
+      ],
+      "optional": [
+        "suan",
+        "sheng_chou"
+      ],
+      "tags": [
+        "家常"
+      ],
+      "timeMin": 10,
+      "difficulty": 1,
+      "equipment": "炒锅",
+      "servings": 2,
+      "materials": {
+        "main": [
+          {
+            "id": "dou_fu",
+            "amount": 400,
+            "unit": "克"
+          }
+        ],
+        "seasonings": [
+          {
+            "id": "shi_yong_you",
+            "amount": 10,
+            "unit": "毫升"
+          },
+          {
+            "id": "yan",
+            "amount": 2,
+            "unit": "克",
+            "note": "先少放，熟后尝味再补；加生抽、蚝油等咸味调料时减盐。"
+          }
+        ],
+        "optional": [
+          {
+            "id": "suan",
+            "amount": 2,
+            "unit": "瓣",
+            "note": "可不放，少一点蒜香，直接炒主料即可。"
+          },
+          {
+            "id": "sheng_chou",
+            "amount": 5,
+            "unit": "毫升",
+            "note": "可不放，用盐调味即可；加生抽时少放盐。"
+          }
+        ]
+      },
+      "steps": [
+        "豆腐沥去多余水，用勺子压成大小不一的小块。",
+        "炒锅中火加油，直接下豆腐；有蒜末可先炒香再下豆腐。",
+        "轻轻翻炒约 4—5 分钟，让多余水分蒸发，豆腐彻底热透。",
+        "撒盐再炒约 1 分钟。有生抽可少量加并减盐，喜欢干香口可再略炒一会儿。"
+      ],
+      "tip": "不用保持豆腐完整，嫩豆腐、老豆腐都能炒，出水多就多炒一会儿。",
+      "spicy": false,
+      "categories": [
+        "stirfry"
+      ],
+      "portionNote": "这是一道菜的参考量，建议搭配米饭和其他菜；不是每人一整份。"
+    },
+    {
+      "id": "dish_qingchao_tudou",
+      "name": "清炒土豆丝",
+      "emoji": "🍽️",
+      "description": "主料简单，家常省事",
+      "required": [
+        "tu_dou"
+      ],
+      "seasonings": [
+        "shi_yong_you",
+        "yan"
+      ],
+      "optional": [
+        "cu",
+        "suan"
+      ],
+      "tags": [
+        "家常"
+      ],
+      "timeMin": 15,
+      "difficulty": 1,
+      "equipment": "炒锅",
+      "servings": 2,
+      "materials": {
+        "main": [
+          {
+            "id": "tu_dou",
+            "amount": 400,
+            "unit": "克",
+            "note": "去皮后的重量。"
+          }
+        ],
+        "seasonings": [
+          {
+            "id": "shi_yong_you",
+            "amount": 10,
+            "unit": "毫升"
+          },
+          {
+            "id": "yan",
+            "amount": 2,
+            "unit": "克",
+            "note": "先少放，熟后尝味再补；加生抽、蚝油等咸味调料时减盐。"
+          }
+        ],
+        "optional": [
+          {
+            "id": "cu",
+            "amount": 5,
+            "unit": "毫升",
+            "note": "可不放，不带酸味也好吃。"
+          },
+          {
+            "id": "suan",
+            "amount": 2,
+            "unit": "瓣",
+            "note": "可不放，少一点蒜香，直接炒主料即可。"
+          }
+        ]
+      },
+      "steps": [
+        "土豆去皮切细丝，用清水冲洗表面淀粉，沥干。",
+        "炒锅中火加油，直接下土豆丝；有蒜末可先炒香。",
+        "中大火翻炒约 4—5 分钟，沿锅边少量加水防粘，炒至土豆丝熟透、没有硬芯。",
+        "加盐翻匀出锅。有醋可少量加入，没有就是清炒口味。"
+      ],
+      "tip": "不需要辣椒或醋，土豆、油、盐就够。",
+      "spicy": false,
+      "categories": [
+        "stirfry"
+      ],
+      "portionNote": "这是一道菜的参考量，建议搭配米饭和其他菜；不是每人一整份。"
+    },
+    {
+      "id": "dish_qingchao_qingjiao",
+      "name": "清炒青椒",
+      "emoji": "🍽️",
+      "description": "主料简单，家常省事",
+      "required": [
+        "qing_jiao"
+      ],
+      "seasonings": [
+        "shi_yong_you",
+        "yan"
+      ],
+      "optional": [
+        "suan",
+        "sheng_chou"
+      ],
+      "tags": [
+        "家常"
+      ],
+      "timeMin": 10,
+      "difficulty": 1,
+      "equipment": "炒锅",
+      "servings": 2,
+      "materials": {
+        "main": [
+          {
+            "id": "qing_jiao",
+            "amount": 350,
+            "unit": "克",
+            "note": "去蒂去籽后的重量；大青椒和细长椒大小不同，别只按个数。"
+          }
+        ],
+        "seasonings": [
+          {
+            "id": "shi_yong_you",
+            "amount": 10,
+            "unit": "毫升"
+          },
+          {
+            "id": "yan",
+            "amount": 2,
+            "unit": "克",
+            "note": "先少放，熟后尝味再补；加生抽、蚝油等咸味调料时减盐。"
+          }
+        ],
+        "optional": [
+          {
+            "id": "suan",
+            "amount": 2,
+            "unit": "瓣",
+            "note": "可不放，少一点蒜香，直接炒主料即可。"
+          },
+          {
+            "id": "sheng_chou",
+            "amount": 5,
+            "unit": "毫升",
+            "note": "可不放，用盐调味即可；加生抽时少放盐。"
+          }
+        ]
+      },
+      "steps": [
+        "青椒去蒂去籽，洗净切成细丝；不吃辣请选择甜椒。",
+        "炒锅中火加油，有蒜末可先炒香，没有就直接下青椒。",
+        "中大火翻炒约 3—4 分钟，至青椒变软、熟透；锅干时加 1 汤匙水。",
+        "放盐炒匀即可。有生抽可少量加并减盐，不放也行。"
+      ],
+      "tip": "这里使用不辣的青椒，不需要另外搭配鸡蛋或肉。",
+      "spicy": false,
+      "categories": [
+        "stirfry"
+      ],
+      "portionNote": "这是一道菜的参考量，建议搭配米饭和其他菜；不是每人一整份。"
+    },
+    {
+      "id": "dish_qingchao_fanqie",
+      "name": "清炒番茄",
+      "emoji": "🍽️",
+      "description": "主料简单，家常省事",
+      "required": [
+        "xi_hong_shi"
+      ],
+      "seasonings": [
+        "shi_yong_you",
+        "yan"
+      ],
+      "optional": [
+        "xiao_cong"
+      ],
+      "tags": [
+        "家常"
+      ],
+      "timeMin": 10,
+      "difficulty": 1,
+      "equipment": "炒锅",
+      "servings": 2,
+      "materials": {
+        "main": [
+          {
+            "id": "xi_hong_shi",
+            "amount": 450,
+            "unit": "克",
+            "note": "去蒂后的重量；大果少拿，小果多拿。"
+          }
+        ],
+        "seasonings": [
+          {
+            "id": "shi_yong_you",
+            "amount": 10,
+            "unit": "毫升"
+          },
+          {
+            "id": "yan",
+            "amount": 2,
+            "unit": "克",
+            "note": "先少放，熟后尝味再补；加生抽、蚝油等咸味调料时减盐。"
+          }
+        ],
+        "optional": [
+          {
+            "id": "xiao_cong",
+            "amount": 1,
+            "unit": "根",
+            "note": "可不放，主要增加葱香和颜色。"
+          }
+        ]
+      },
+      "steps": [
+        "番茄洗净切成约 2 厘米小块。",
+        "锅中放油，中火加入番茄翻炒约 2 分钟。",
+        "加 2 汤匙水，继续炒煮约 3—4 分钟，至番茄变软出汁。",
+        "加入盐炒匀即可，有葱花再撒；汤汁可用来拌饭。"
+      ],
+      "tip": "选熟一点的番茄，酸甜味更柔和，不需要额外加糖。",
+      "spicy": false,
+      "categories": [
+        "stirfry"
+      ],
+      "portionNote": "这是一道菜的参考量，建议搭配米饭和其他菜；不是每人一整份。"
+    },
+    {
+      "id": "dish_qingchao_yangcong",
+      "name": "清炒洋葱",
+      "emoji": "🍽️",
+      "description": "主料简单，家常省事",
+      "required": [
+        "yang_cong"
+      ],
+      "seasonings": [
+        "shi_yong_you",
+        "yan"
+      ],
+      "optional": [
+        "sheng_chou"
+      ],
+      "tags": [
+        "家常"
+      ],
+      "timeMin": 12,
+      "difficulty": 1,
+      "equipment": "炒锅",
+      "servings": 2,
+      "materials": {
+        "main": [
+          {
+            "id": "yang_cong",
+            "amount": 400,
+            "unit": "克",
+            "note": "去皮后的重量。"
+          }
+        ],
+        "seasonings": [
+          {
+            "id": "shi_yong_you",
+            "amount": 10,
+            "unit": "毫升"
+          },
+          {
+            "id": "yan",
+            "amount": 2,
+            "unit": "克",
+            "note": "先少放，熟后尝味再补；加生抽、蚝油等咸味调料时减盐。"
+          }
+        ],
+        "optional": [
+          {
+            "id": "sheng_chou",
+            "amount": 5,
+            "unit": "毫升",
+            "note": "可不放，用盐调味即可；加生抽时少放盐。"
+          }
+        ]
+      },
+      "steps": [
+        "洋葱去外皮、洗净，切成细丝。",
+        "锅中放油，中火下洋葱，翻炒约 2 分钟。",
+        "加入 2 汤匙水，再炒约 4—5 分钟至洋葱变软、略透明。",
+        "加盐炒匀。有生抽可少量加并减盐，盛出即可。"
+      ],
+      "tip": "把洋葱炒软一些，会更甜、更少辛辣味。",
+      "spicy": false,
+      "categories": [
+        "stirfry"
+      ],
+      "portionNote": "这是一道菜的参考量，建议搭配米饭和其他菜；不是每人一整份。"
+    },
+    {
+      "id": "dish_yuanwei_chaofan",
+      "name": "原味炒饭",
+      "emoji": "🍽️",
+      "description": "主料简单，家常省事",
+      "required": [
+        "mi_fan"
+      ],
+      "seasonings": [
+        "shi_yong_you",
+        "yan"
+      ],
+      "optional": [
+        "ji_dan",
+        "xiao_cong",
+        "sheng_chou"
+      ],
+      "tags": [
+        "家常"
+      ],
+      "timeMin": 10,
+      "difficulty": 1,
+      "equipment": "炒锅",
+      "servings": 2,
+      "materials": {
+        "main": [
+          {
+            "id": "mi_fan",
+            "amount": 400,
+            "unit": "克",
+            "note": "煮熟的米饭重量，不是生米。"
+          }
+        ],
+        "seasonings": [
+          {
+            "id": "shi_yong_you",
+            "amount": 10,
+            "unit": "毫升"
+          },
+          {
+            "id": "yan",
+            "amount": 2,
+            "unit": "克",
+            "note": "先少放，熟后尝味再补；加生抽、蚝油等咸味调料时减盐。"
+          }
+        ],
+        "optional": [
+          {
+            "id": "ji_dan",
+            "amount": 1,
+            "unit": "个",
+            "note": "可不放，米饭本身也能炒；加鸡蛋时先炒熟再拌入。"
+          },
+          {
+            "id": "xiao_cong",
+            "amount": 1,
+            "unit": "根",
+            "note": "可不放，主要增加葱香和颜色。"
+          },
+          {
+            "id": "sheng_chou",
+            "amount": 5,
+            "unit": "毫升",
+            "note": "可不放，用盐调味即可；加生抽时少放盐。"
+          }
+        ]
+      },
+      "steps": [
+        "准备煮熟的米饭，用饭勺拨散。剩饭需是及时冷藏、保存得当的米饭。",
+        "炒锅中火放油；有鸡蛋时先打散炒至凝固，再加入米饭，没有就直接下米饭。",
+        "转中大火翻炒约 4—5 分钟，炒散结块并让米饭彻底热透。",
+        "加盐炒匀即可。有生抽可少量加并减盐，有葱花再撒，都可省略。"
+      ],
+      "tip": "这是已有熟米饭的简单吃法，生大米需先煮熟，不能直接照此炒。",
+      "spicy": false,
+      "categories": [
+        "staple"
+      ],
+      "portionNote": "按每人约 200 克熟米饭估算，饭量大可增加；原味炒饭建议搭配菜。"
+    },
+    {
+      "id": "dish_jian_jichi",
+      "name": "盐煎鸡翅",
+      "emoji": "🍽️",
+      "description": "主料简单，家常省事",
+      "required": [
+        "ji_chi"
+      ],
+      "seasonings": [
+        "shi_yong_you",
+        "yan"
+      ],
+      "optional": [
+        "jiang",
+        "sheng_chou"
+      ],
+      "tags": [
+        "家常"
+      ],
+      "timeMin": 30,
+      "difficulty": 1,
+      "equipment": "炒锅",
+      "servings": 2,
+      "materials": {
+        "main": [
+          {
+            "id": "ji_chi",
+            "amount": 8,
+            "unit": "个",
+            "note": "按鸡翅中计数，不是整只鸡翅。"
+          }
+        ],
+        "seasonings": [
+          {
+            "id": "shi_yong_you",
+            "amount": 10,
+            "unit": "毫升"
+          },
+          {
+            "id": "yan",
+            "amount": 2,
+            "unit": "克",
+            "note": "先少放，熟后尝味再补；加生抽、蚝油等咸味调料时减盐。"
+          }
+        ],
+        "optional": [
+          {
+            "id": "jiang",
+            "amount": 10,
+            "unit": "克",
+            "note": "可不放，少一点姜香。"
+          },
+          {
+            "id": "sheng_chou",
+            "amount": 5,
+            "unit": "毫升",
+            "note": "可不放，用盐调味即可；加生抽时少放盐。"
+          }
+        ]
+      },
+      "steps": [
+        "鸡翅完全解冻、擦干，两面划几刀，撒盐抹匀。",
+        "锅中放油，中小火放鸡翅，两面各煎约 3 分钟至表面金黄。",
+        "加清水约 150 毫升（2 人份），有姜片可加入，盖锅小火焖约 15 分钟，中途翻面、检查水量。",
+        "开盖确认鸡翅最厚处完全熟透、没有生肉；未熟继续加水焖。熟后收汁，有生抽可少量加并减盐。"
+      ],
+      "tip": "不需要可乐、料酒，煎香后加水焖透即可。",
+      "spicy": false,
+      "categories": [
+        "braise"
+      ],
+      "portionNote": "这是一道菜的参考量，建议搭配米饭和其他菜；不是每人一整份。"
+    },
+    {
+      "id": "dish_yanjian_liji",
+      "name": "盐煎里脊",
+      "emoji": "🍽️",
+      "description": "主料简单，家常省事",
+      "required": [
+        "li_ji_rou"
+      ],
+      "seasonings": [
+        "shi_yong_you",
+        "yan"
+      ],
+      "optional": [
+        "bai_hu_jiao",
+        "sheng_chou"
+      ],
+      "tags": [
+        "家常"
+      ],
+      "timeMin": 15,
+      "difficulty": 1,
+      "equipment": "炒锅",
+      "servings": 2,
+      "materials": {
+        "main": [
+          {
+            "id": "li_ji_rou",
+            "amount": 250,
+            "unit": "克"
+          }
+        ],
+        "seasonings": [
+          {
+            "id": "shi_yong_you",
+            "amount": 10,
+            "unit": "毫升"
+          },
+          {
+            "id": "yan",
+            "amount": 2,
+            "unit": "克",
+            "note": "先少放，熟后尝味再补；加生抽、蚝油等咸味调料时减盐。"
+          }
+        ],
+        "optional": [
+          {
+            "id": "bai_hu_jiao",
+            "amount": 0.5,
+            "unit": "克",
+            "note": "可不放，少一点胡椒香。"
+          },
+          {
+            "id": "sheng_chou",
+            "amount": 5,
+            "unit": "毫升",
+            "note": "可不放，用盐调味即可；加生抽时少放盐。"
+          }
+        ]
+      },
+      "steps": [
+        "里脊肉切成约 3 毫米薄片，撒盐抓匀；有白胡椒粉可少量加，不需要淀粉。",
+        "炒锅中火放油，把肉片尽量铺开，不要堆叠太厚。",
+        "一面煎约 1—2 分钟再翻面，继续煎至肉片完全熟透，按厚度调整时间。",
+        "有生抽可少量加入并减盐，翻匀出锅。肉熟后及时盛出，避免反复久煎变硬。"
+      ],
+      "tip": "薄切更省时；普通瘦猪肉也有单独的清炒做法。",
+      "spicy": false,
+      "categories": [
+        "braise"
+      ],
+      "portionNote": "这是一道菜的参考量，建议搭配米饭和其他菜；不是每人一整份。"
+    },
+    {
+      "id": "dish_qingchao_zhurou",
+      "name": "清炒猪肉片",
+      "emoji": "🍽️",
+      "description": "主料简单，家常省事",
+      "required": [
+        "zhu_rou"
+      ],
+      "seasonings": [
+        "shi_yong_you",
+        "yan"
+      ],
+      "optional": [
+        "suan",
+        "sheng_chou"
+      ],
+      "tags": [
+        "家常"
+      ],
+      "timeMin": 15,
+      "difficulty": 1,
+      "equipment": "炒锅",
+      "servings": 2,
+      "materials": {
+        "main": [
+          {
+            "id": "zhu_rou",
+            "amount": 250,
+            "unit": "克"
+          }
+        ],
+        "seasonings": [
+          {
+            "id": "shi_yong_you",
+            "amount": 10,
+            "unit": "毫升"
+          },
+          {
+            "id": "yan",
+            "amount": 2,
+            "unit": "克",
+            "note": "先少放，熟后尝味再补；加生抽、蚝油等咸味调料时减盐。"
+          }
+        ],
+        "optional": [
+          {
+            "id": "suan",
+            "amount": 2,
+            "unit": "瓣",
+            "note": "可不放，少一点蒜香，直接炒主料即可。"
+          },
+          {
+            "id": "sheng_chou",
+            "amount": 5,
+            "unit": "毫升",
+            "note": "可不放，用盐调味即可；加生抽时少放盐。"
+          }
+        ]
+      },
+      "steps": [
+        "猪肉选瘦肉或肥瘦相间的部位，切约 3 毫米薄片。",
+        "锅中放油，中火下肉片，快速拨散；有蒜末可一起炒香。",
+        "持续翻炒至肉片完全熟透，不能只看表面变色。偏干可加 1—2 汤匙水。",
+        "加盐炒匀。有生抽可少量加并减盐，出锅即可。"
+      ],
+      "tip": "不需要淀粉和腌制；肉片切薄，炒熟后及时出锅。",
+      "spicy": false,
+      "categories": [
+        "stirfry"
+      ],
+      "portionNote": "这是一道菜的参考量，建议搭配米饭和其他菜；不是每人一整份。"
+    },
+    {
+      "id": "dish_qingchao_jidan",
+      "name": "清炒鸡蛋",
+      "emoji": "🍽️",
+      "description": "主料简单，家常省事",
+      "required": [
+        "ji_dan"
+      ],
+      "seasonings": [
+        "shi_yong_you",
+        "yan"
+      ],
+      "optional": [
+        "xiao_cong"
+      ],
+      "tags": [
+        "家常"
+      ],
+      "timeMin": 8,
+      "difficulty": 1,
+      "equipment": "炒锅",
+      "servings": 2,
+      "materials": {
+        "main": [
+          {
+            "id": "ji_dan",
+            "amount": 4,
+            "unit": "个",
+            "note": "普通大小鸡蛋；按人数换算时取整颗。"
+          }
+        ],
+        "seasonings": [
+          {
+            "id": "shi_yong_you",
+            "amount": 10,
+            "unit": "毫升"
+          },
+          {
+            "id": "yan",
+            "amount": 2,
+            "unit": "克",
+            "note": "先少放，熟后尝味再补；加生抽、蚝油等咸味调料时减盐。"
+          }
+        ],
+        "optional": [
+          {
+            "id": "xiao_cong",
+            "amount": 1,
+            "unit": "根",
+            "note": "可不放，主要增加葱香和颜色。"
+          }
+        ]
+      },
+      "steps": [
+        "鸡蛋打入碗，加盐和 1 汤匙水打散。",
+        "炒锅中火加油，倒入蛋液，等待底部开始凝固。",
+        "用锅铲轻推成块，翻炒至没有流动蛋液、鸡蛋完全凝固。",
+        "关火装盘，有葱花可以撒上，没有也可以直接吃。"
+      ],
+      "tip": "鸡蛋熟后及时关火，不用额外加生抽或蚝油。",
+      "spicy": false,
+      "categories": [
+        "stirfry"
+      ],
+      "portionNote": "这是一道菜的参考量，建议搭配米饭和其他菜；不是每人一整份。"
+    },
+    {
+      "id": "dish_baizhu_xia",
+      "name": "盐水虾",
+      "emoji": "🍽️",
+      "description": "主料简单，家常省事",
+      "required": [
+        "xia"
+      ],
+      "seasonings": [
+        "yan"
+      ],
+      "optional": [
+        "jiang"
+      ],
+      "tags": [
+        "家常"
+      ],
+      "timeMin": 12,
+      "difficulty": 1,
+      "equipment": "煮锅",
+      "servings": 2,
+      "materials": {
+        "main": [
+          {
+            "id": "xia",
+            "amount": 400,
+            "unit": "克",
+            "note": "带头带壳鲜虾重量；用现成虾仁可适当减少。"
+          }
+        ],
+        "seasonings": [
+          {
+            "id": "yan",
+            "amount": 2,
+            "unit": "克",
+            "note": "先少放，熟后尝味再补；加生抽、蚝油等咸味调料时减盐。"
+          }
+        ],
+        "optional": [
+          {
+            "id": "jiang",
+            "amount": 10,
+            "unit": "克",
+            "note": "可不放，少一点姜香。"
+          }
+        ]
+      },
+      "steps": [
+        "鲜虾清洗、去虾线，冷冻虾先完全解冻；带壳虾和虾仁都可以。",
+        "锅中加清水约 600 毫升（2 人份）、盐，煮开。有姜片可放，没有可省略。",
+        "放入虾，中火煮约 3—5 分钟，按大小调整，至虾肉中心完全不透明、熟透。",
+        "捞出沥水装盘，不需要额外蘸料也能吃。"
+      ],
+      "tip": "不要只看虾壳变红，虾肉中心也要熟透。",
+      "spicy": false,
+      "categories": [
+        "steam"
+      ],
+      "portionNote": "这是一道菜的参考量，建议搭配米饭和其他菜；不是每人一整份。"
+    },
+    {
+      "id": "dish_shengcai",
+      "name": "清炒生菜",
+      "emoji": "🍽️",
+      "description": "主料简单，家常省事",
+      "required": [
+        "sheng_cai"
+      ],
+      "seasonings": [
+        "shi_yong_you",
+        "yan"
+      ],
+      "optional": [
+        "suan"
+      ],
+      "tags": [
+        "家常"
+      ],
+      "timeMin": 8,
+      "difficulty": 1,
+      "equipment": "炒锅",
+      "servings": 2,
+      "materials": {
+        "main": [
+          {
+            "id": "sheng_cai",
+            "amount": 300,
+            "unit": "克"
+          }
+        ],
+        "seasonings": [
+          {
+            "id": "shi_yong_you",
+            "amount": 10,
+            "unit": "毫升"
+          },
+          {
+            "id": "yan",
+            "amount": 2,
+            "unit": "克",
+            "note": "先少放，熟后尝味再补；加生抽、蚝油等咸味调料时减盐。"
+          }
+        ],
+        "optional": [
+          {
+            "id": "suan",
+            "amount": 2,
+            "unit": "瓣",
+            "note": "可不放，少一点蒜香，直接炒主料即可。"
+          }
+        ]
+      },
+      "steps": [
+        "生菜掰开洗净，沥干水分。",
+        "炒锅中火放油；有蒜末可先炒香，没有就直接下菜。",
+        "大火翻炒约 1—2 分钟，至叶片变软、菜梗熟而略脆。",
+        "放盐翻匀，确认食材熟透后出锅；锅里水多可开盖略收汁。"
+      ],
+      "tip": "只需主料、油和盐，蒜可不放；时间按食材厚度调整。",
+      "spicy": false,
+      "categories": [
+        "stirfry"
+      ],
+      "portionNote": "这是一道菜的参考量，建议搭配米饭和其他菜；不是每人一整份。"
+    },
+    {
+      "id": "dish_xiaobaicai",
+      "name": "清炒小白菜",
+      "emoji": "🍽️",
+      "description": "主料简单，家常省事",
+      "required": [
+        "xiao_bai_cai"
+      ],
+      "seasonings": [
+        "shi_yong_you",
+        "yan"
+      ],
+      "optional": [
+        "suan"
+      ],
+      "tags": [
+        "家常"
+      ],
+      "timeMin": 10,
+      "difficulty": 1,
+      "equipment": "炒锅",
+      "servings": 2,
+      "materials": {
+        "main": [
+          {
+            "id": "xiao_bai_cai",
+            "amount": 300,
+            "unit": "克"
+          }
+        ],
+        "seasonings": [
+          {
+            "id": "shi_yong_you",
+            "amount": 10,
+            "unit": "毫升"
+          },
+          {
+            "id": "yan",
+            "amount": 2,
+            "unit": "克",
+            "note": "先少放，熟后尝味再补；加生抽、蚝油等咸味调料时减盐。"
+          }
+        ],
+        "optional": [
+          {
+            "id": "suan",
+            "amount": 2,
+            "unit": "瓣",
+            "note": "可不放，少一点蒜香，直接炒主料即可。"
+          }
+        ]
+      },
+      "steps": [
+        "小白菜洗净，菜梗和菜叶分开，较大的菜梗切段。",
+        "炒锅中火放油；有蒜末可先炒香，没有就直接下菜。",
+        "先下菜梗炒约 2 分钟，再下菜叶炒约 1—2 分钟，至菜梗熟透。",
+        "放盐翻匀，确认食材熟透后出锅；锅里水多可开盖略收汁。"
+      ],
+      "tip": "只需主料、油和盐，蒜可不放；时间按食材厚度调整。",
+      "spicy": false,
+      "categories": [
+        "stirfry"
+      ],
+      "portionNote": "这是一道菜的参考量，建议搭配米饭和其他菜；不是每人一整份。"
+    },
+    {
+      "id": "dish_dabaicai",
+      "name": "清炒白菜",
+      "emoji": "🍽️",
+      "description": "主料简单，家常省事",
+      "required": [
+        "da_bai_cai"
+      ],
+      "seasonings": [
+        "shi_yong_you",
+        "yan"
+      ],
+      "optional": [
+        "suan"
+      ],
+      "tags": [
+        "家常"
+      ],
+      "timeMin": 12,
+      "difficulty": 1,
+      "equipment": "炒锅",
+      "servings": 2,
+      "materials": {
+        "main": [
+          {
+            "id": "da_bai_cai",
+            "amount": 400,
+            "unit": "克"
+          }
+        ],
+        "seasonings": [
+          {
+            "id": "shi_yong_you",
+            "amount": 10,
+            "unit": "毫升"
+          },
+          {
+            "id": "yan",
+            "amount": 2,
+            "unit": "克",
+            "note": "先少放，熟后尝味再补；加生抽、蚝油等咸味调料时减盐。"
+          }
+        ],
+        "optional": [
+          {
+            "id": "suan",
+            "amount": 2,
+            "unit": "瓣",
+            "note": "可不放，少一点蒜香，直接炒主料即可。"
+          }
+        ]
+      },
+      "steps": [
+        "白菜洗净，菜帮切细条，与菜叶分开放。",
+        "炒锅中火放油；有蒜末可先炒香，没有就直接下菜。",
+        "先炒菜帮约 3 分钟，再放菜叶炒约 2 分钟，少量加水焖至菜帮熟软。",
+        "放盐翻匀，确认食材熟透后出锅；锅里水多可开盖略收汁。"
+      ],
+      "tip": "只需主料、油和盐，蒜可不放；时间按食材厚度调整。",
+      "spicy": false,
+      "categories": [
+        "stirfry"
+      ],
+      "portionNote": "这是一道菜的参考量，建议搭配米饭和其他菜；不是每人一整份。"
+    },
+    {
+      "id": "dish_wawacai",
+      "name": "清炒娃娃菜",
+      "emoji": "🍽️",
+      "description": "主料简单，家常省事",
+      "required": [
+        "wa_wa_cai"
+      ],
+      "seasonings": [
+        "shi_yong_you",
+        "yan"
+      ],
+      "optional": [
+        "suan"
+      ],
+      "tags": [
+        "家常"
+      ],
+      "timeMin": 10,
+      "difficulty": 1,
+      "equipment": "炒锅",
+      "servings": 2,
+      "materials": {
+        "main": [
+          {
+            "id": "wa_wa_cai",
+            "amount": 300,
+            "unit": "克"
+          }
+        ],
+        "seasonings": [
+          {
+            "id": "shi_yong_you",
+            "amount": 10,
+            "unit": "毫升"
+          },
+          {
+            "id": "yan",
+            "amount": 2,
+            "unit": "克",
+            "note": "先少放，熟后尝味再补；加生抽、蚝油等咸味调料时减盐。"
+          }
+        ],
+        "optional": [
+          {
+            "id": "suan",
+            "amount": 2,
+            "unit": "瓣",
+            "note": "可不放，少一点蒜香，直接炒主料即可。"
+          }
+        ]
+      },
+      "steps": [
+        "娃娃菜洗净切条，菜帮和菜叶分开放。",
+        "炒锅中火放油；有蒜末可先炒香，没有就直接下菜。",
+        "菜帮先炒约 2 分钟，再下菜叶炒约 2 分钟，至菜帮熟软。",
+        "放盐翻匀，确认食材熟透后出锅；锅里水多可开盖略收汁。"
+      ],
+      "tip": "只需主料、油和盐，蒜可不放；时间按食材厚度调整。",
+      "spicy": false,
+      "categories": [
+        "stirfry"
+      ],
+      "portionNote": "这是一道菜的参考量，建议搭配米饭和其他菜；不是每人一整份。"
+    },
+    {
+      "id": "dish_bocai",
+      "name": "清炒菠菜",
+      "emoji": "🍽️",
+      "description": "主料简单，家常省事",
+      "required": [
+        "bo_cai"
+      ],
+      "seasonings": [
+        "shi_yong_you",
+        "yan"
+      ],
+      "optional": [
+        "suan"
+      ],
+      "tags": [
+        "家常"
+      ],
+      "timeMin": 12,
+      "difficulty": 1,
+      "equipment": "炒锅",
+      "servings": 2,
+      "materials": {
+        "main": [
+          {
+            "id": "bo_cai",
+            "amount": 300,
+            "unit": "克"
+          }
+        ],
+        "seasonings": [
+          {
+            "id": "shi_yong_you",
+            "amount": 10,
+            "unit": "毫升"
+          },
+          {
+            "id": "yan",
+            "amount": 2,
+            "unit": "克",
+            "note": "先少放，熟后尝味再补；加生抽、蚝油等咸味调料时减盐。"
+          }
+        ],
+        "optional": [
+          {
+            "id": "suan",
+            "amount": 2,
+            "unit": "瓣",
+            "note": "可不放，少一点蒜香，直接炒主料即可。"
+          }
+        ]
+      },
+      "steps": [
+        "菠菜去根洗净，沸水中焯约 1 分钟，捞出沥干。",
+        "炒锅中火放油；有蒜末可先炒香，没有就直接下菜。",
+        "下菠菜中大火翻炒约 1—2 分钟，至全部熟透。",
+        "放盐翻匀，确认食材熟透后出锅；锅里水多可开盖略收汁。"
+      ],
+      "tip": "只需主料、油和盐，蒜可不放；时间按食材厚度调整。",
+      "spicy": false,
+      "categories": [
+        "stirfry"
+      ],
+      "portionNote": "这是一道菜的参考量，建议搭配米饭和其他菜；不是每人一整份。"
+    },
+    {
+      "id": "dish_xianggu",
+      "name": "清炒香菇",
+      "emoji": "🍽️",
+      "description": "主料简单，家常省事",
+      "required": [
+        "xiang_gu"
+      ],
+      "seasonings": [
+        "shi_yong_you",
+        "yan"
+      ],
+      "optional": [
+        "suan"
+      ],
+      "tags": [
+        "家常"
+      ],
+      "timeMin": 15,
+      "difficulty": 1,
+      "equipment": "炒锅",
+      "servings": 2,
+      "materials": {
+        "main": [
+          {
+            "id": "xiang_gu",
+            "amount": 250,
+            "unit": "克",
+            "note": "鲜香菇重量，不能用同重量干香菇替代。"
+          }
+        ],
+        "seasonings": [
+          {
+            "id": "shi_yong_you",
+            "amount": 10,
+            "unit": "毫升"
+          },
+          {
+            "id": "yan",
+            "amount": 2,
+            "unit": "克",
+            "note": "先少放，熟后尝味再补；加生抽、蚝油等咸味调料时减盐。"
+          }
+        ],
+        "optional": [
+          {
+            "id": "suan",
+            "amount": 2,
+            "unit": "瓣",
+            "note": "可不放，少一点蒜香，直接炒主料即可。"
+          }
+        ]
+      },
+      "steps": [
+        "这里按鲜香菇计量，洗净去硬蒂、切薄片；干香菇需另外充分泡发。",
+        "炒锅中火放油；有蒜末可先炒香，没有就直接下菜。",
+        "下香菇翻炒约 2 分钟，加 3 汤匙水，焖约 5 分钟至香菇熟软。",
+        "放盐翻匀，确认食材熟透后出锅；锅里水多可开盖略收汁。"
+      ],
+      "tip": "只需主料、油和盐，蒜可不放；时间按食材厚度调整。",
+      "spicy": false,
+      "categories": [
+        "stirfry"
+      ],
+      "portionNote": "这是一道菜的参考量，建议搭配米饭和其他菜；不是每人一整份。"
+    },
+    {
+      "id": "dish_pinggu",
+      "name": "清炒平菇",
+      "emoji": "🍽️",
+      "description": "主料简单，家常省事",
+      "required": [
+        "ping_gu"
+      ],
+      "seasonings": [
+        "shi_yong_you",
+        "yan"
+      ],
+      "optional": [
+        "suan"
+      ],
+      "tags": [
+        "家常"
+      ],
+      "timeMin": 12,
+      "difficulty": 1,
+      "equipment": "炒锅",
+      "servings": 2,
+      "materials": {
+        "main": [
+          {
+            "id": "ping_gu",
+            "amount": 300,
+            "unit": "克"
+          }
+        ],
+        "seasonings": [
+          {
+            "id": "shi_yong_you",
+            "amount": 10,
+            "unit": "毫升"
+          },
+          {
+            "id": "yan",
+            "amount": 2,
+            "unit": "克",
+            "note": "先少放，熟后尝味再补；加生抽、蚝油等咸味调料时减盐。"
+          }
+        ],
+        "optional": [
+          {
+            "id": "suan",
+            "amount": 2,
+            "unit": "瓣",
+            "note": "可不放，少一点蒜香，直接炒主料即可。"
+          }
+        ]
+      },
+      "steps": [
+        "平菇洗净撕成小条，沥去多余水分。",
+        "炒锅中火放油；有蒜末可先炒香，没有就直接下菜。",
+        "下平菇翻炒约 2 分钟，少量加水，再炒煮约 4—5 分钟至充分熟透。",
+        "放盐翻匀，确认食材熟透后出锅；锅里水多可开盖略收汁。"
+      ],
+      "tip": "只需主料、油和盐，蒜可不放；时间按食材厚度调整。",
+      "spicy": false,
+      "categories": [
+        "stirfry"
+      ],
+      "portionNote": "这是一道菜的参考量，建议搭配米饭和其他菜；不是每人一整份。"
+    },
+    {
+      "id": "dish_huluobo",
+      "name": "清炒胡萝卜",
+      "emoji": "🍽️",
+      "description": "主料简单，家常省事",
+      "required": [
+        "hu_luo_bo"
+      ],
+      "seasonings": [
+        "shi_yong_you",
+        "yan"
+      ],
+      "optional": [
+        "suan"
+      ],
+      "tags": [
+        "家常"
+      ],
+      "timeMin": 15,
+      "difficulty": 1,
+      "equipment": "炒锅",
+      "servings": 2,
+      "materials": {
+        "main": [
+          {
+            "id": "hu_luo_bo",
+            "amount": 250,
+            "unit": "克"
+          }
+        ],
+        "seasonings": [
+          {
+            "id": "shi_yong_you",
+            "amount": 10,
+            "unit": "毫升"
+          },
+          {
+            "id": "yan",
+            "amount": 2,
+            "unit": "克",
+            "note": "先少放，熟后尝味再补；加生抽、蚝油等咸味调料时减盐。"
+          }
+        ],
+        "optional": [
+          {
+            "id": "suan",
+            "amount": 2,
+            "unit": "瓣",
+            "note": "可不放，少一点蒜香，直接炒主料即可。"
+          }
+        ]
+      },
+      "steps": [
+        "胡萝卜洗净切细丝或薄片。",
+        "炒锅中火放油；有蒜末可先炒香，没有就直接下菜。",
+        "下胡萝卜炒约 2 分钟，加 3 汤匙水，小火焖约 4 分钟至熟软。",
+        "放盐翻匀，确认食材熟透后出锅；锅里水多可开盖略收汁。"
+      ],
+      "tip": "只需主料、油和盐，蒜可不放；时间按食材厚度调整。",
+      "spicy": false,
+      "categories": [
+        "stirfry"
+      ],
+      "portionNote": "这是一道菜的参考量，建议搭配米饭和其他菜；不是每人一整份。"
+    },
+    {
+      "id": "dish_donggua",
+      "name": "清炒冬瓜",
+      "emoji": "🍽️",
+      "description": "主料简单，家常省事",
+      "required": [
+        "dong_gua"
+      ],
+      "seasonings": [
+        "shi_yong_you",
+        "yan"
+      ],
+      "optional": [
+        "suan"
+      ],
+      "tags": [
+        "家常"
+      ],
+      "timeMin": 15,
+      "difficulty": 1,
+      "equipment": "炒锅",
+      "servings": 2,
+      "materials": {
+        "main": [
+          {
+            "id": "dong_gua",
+            "amount": 400,
+            "unit": "克",
+            "note": "去皮去瓤后的重量。"
+          }
+        ],
+        "seasonings": [
+          {
+            "id": "shi_yong_you",
+            "amount": 10,
+            "unit": "毫升"
+          },
+          {
+            "id": "yan",
+            "amount": 2,
+            "unit": "克",
+            "note": "先少放，熟后尝味再补；加生抽、蚝油等咸味调料时减盐。"
+          }
+        ],
+        "optional": [
+          {
+            "id": "suan",
+            "amount": 2,
+            "unit": "瓣",
+            "note": "可不放，少一点蒜香，直接炒主料即可。"
+          }
+        ]
+      },
+      "steps": [
+        "冬瓜去皮去瓤，切约 5 毫米薄片。",
+        "炒锅中火放油；有蒜末可先炒香，没有就直接下菜。",
+        "下冬瓜炒约 2 分钟，加少量水，焖约 5 分钟至冬瓜半透明、熟软。",
+        "放盐翻匀，确认食材熟透后出锅；锅里水多可开盖略收汁。"
+      ],
+      "tip": "只需主料、油和盐，蒜可不放；时间按食材厚度调整。",
+      "spicy": false,
+      "categories": [
+        "stirfry"
+      ],
+      "portionNote": "这是一道菜的参考量，建议搭配米饭和其他菜；不是每人一整份。"
+    },
+    {
+      "id": "dish_qiezi",
+      "name": "少油焖茄子",
+      "emoji": "🍽️",
+      "description": "主料简单，家常省事",
+      "required": [
+        "qie_zi"
+      ],
+      "seasonings": [
+        "shi_yong_you",
+        "yan"
+      ],
+      "optional": [
+        "suan"
+      ],
+      "tags": [
+        "家常"
+      ],
+      "timeMin": 20,
+      "difficulty": 1,
+      "equipment": "炒锅",
+      "servings": 2,
+      "materials": {
+        "main": [
+          {
+            "id": "qie_zi",
+            "amount": 350,
+            "unit": "克"
+          }
+        ],
+        "seasonings": [
+          {
+            "id": "shi_yong_you",
+            "amount": 10,
+            "unit": "毫升"
+          },
+          {
+            "id": "yan",
+            "amount": 2,
+            "unit": "克",
+            "note": "先少放，熟后尝味再补；加生抽、蚝油等咸味调料时减盐。"
+          }
+        ],
+        "optional": [
+          {
+            "id": "suan",
+            "amount": 2,
+            "unit": "瓣",
+            "note": "可不放，少一点蒜香，直接炒主料即可。"
+          }
+        ]
+      },
+      "steps": [
+        "茄子洗净切成细条。",
+        "炒锅中火放油；有蒜末可先炒香，没有就直接下菜。",
+        "下茄子翻炒约 2 分钟，加入清水 100 毫升（2 人份），盖锅焖约 8 分钟至茄子完全熟软。",
+        "放盐翻匀，确认食材熟透后出锅；锅里水多可开盖略收汁。"
+      ],
+      "tip": "只需主料、油和盐，蒜可不放；时间按食材厚度调整。",
+      "spicy": false,
+      "categories": [
+        "braise"
+      ],
+      "portionNote": "这是一道菜的参考量，建议搭配米饭和其他菜；不是每人一整份。"
+    },
+    {
+      "id": "dish_nangua",
+      "name": "清炒南瓜",
+      "emoji": "🍽️",
+      "description": "主料简单，家常省事",
+      "required": [
+        "nan_gua"
+      ],
+      "seasonings": [
+        "shi_yong_you",
+        "yan"
+      ],
+      "optional": [
+        "suan"
+      ],
+      "tags": [
+        "家常"
+      ],
+      "timeMin": 18,
+      "difficulty": 1,
+      "equipment": "炒锅",
+      "servings": 2,
+      "materials": {
+        "main": [
+          {
+            "id": "nan_gua",
+            "amount": 350,
+            "unit": "克",
+            "note": "去皮去瓤后的重量。"
+          }
+        ],
+        "seasonings": [
+          {
+            "id": "shi_yong_you",
+            "amount": 10,
+            "unit": "毫升"
+          },
+          {
+            "id": "yan",
+            "amount": 2,
+            "unit": "克",
+            "note": "先少放，熟后尝味再补；加生抽、蚝油等咸味调料时减盐。"
+          }
+        ],
+        "optional": [
+          {
+            "id": "suan",
+            "amount": 2,
+            "unit": "瓣",
+            "note": "可不放，少一点蒜香，直接炒主料即可。"
+          }
+        ]
+      },
+      "steps": [
+        "南瓜去皮去瓤，切约 5 毫米薄片。",
+        "炒锅中火放油；有蒜末可先炒香，没有就直接下菜。",
+        "下南瓜翻炒约 2 分钟，加少量水，盖锅焖约 6—8 分钟至熟软。",
+        "放盐翻匀，确认食材熟透后出锅；锅里水多可开盖略收汁。"
+      ],
+      "tip": "只需主料、油和盐，蒜可不放；时间按食材厚度调整。",
+      "spicy": false,
+      "categories": [
+        "stirfry"
+      ],
+      "portionNote": "这是一道菜的参考量，建议搭配米饭和其他菜；不是每人一整份。"
+    },
+    {
+      "id": "dish_zheng_yumi",
+      "name": "蒸玉米",
+      "emoji": "🍽️",
+      "description": "主料简单，家常省事",
+      "required": [
+        "yu_mi"
+      ],
+      "seasonings": [],
+      "optional": [],
+      "tags": [
+        "家常"
+      ],
+      "timeMin": 25,
+      "difficulty": 1,
+      "equipment": "蒸锅",
+      "servings": 2,
+      "materials": {
+        "main": [
+          {
+            "id": "yu_mi",
+            "amount": 2,
+            "unit": "根",
+            "note": "中等大小玉米；按根计量，不能等同于两人的完整一餐。"
+          }
+        ],
+        "seasonings": [],
+        "optional": []
+      },
+      "steps": [
+        "玉米剥去外层老叶和须，洗净，太长可切段。",
+        "蒸锅加足水，放蒸屉，水开后放玉米。",
+        "盖锅中火蒸约 15—20 分钟，按玉米品种和大小调整，注意锅里不能烧干。",
+        "检查玉米粒熟透、没有硬生芯，夹出稍晾再吃。"
+      ],
+      "tip": "玉米本身有甜味，不需要油盐；糯玉米可能需要更久。",
+      "spicy": false,
+      "categories": [
+        "steam",
+        "staple"
+      ],
+      "portionNote": "这是一道菜的参考量，建议搭配米饭和其他菜；不是每人一整份。"
+    },
+    {
+      "id": "dish_zheng_nangua",
+      "name": "蒸南瓜",
+      "emoji": "🍽️",
+      "description": "主料简单，家常省事",
+      "required": [
+        "nan_gua"
+      ],
+      "seasonings": [],
+      "optional": [],
+      "tags": [
+        "家常"
+      ],
+      "timeMin": 25,
+      "difficulty": 1,
+      "equipment": "蒸锅",
+      "servings": 2,
+      "materials": {
+        "main": [
+          {
+            "id": "nan_gua",
+            "amount": 400,
+            "unit": "克",
+            "note": "去皮去瓤后的重量。"
+          }
+        ],
+        "seasonings": [],
+        "optional": []
+      },
+      "steps": [
+        "南瓜洗净去瓤，切约 2 厘米厚的块；硬皮可削去。",
+        "蒸锅加足水，南瓜放耐热盘，再放入蒸屉。",
+        "水开后中火蒸约 15—20 分钟，注意水量，避免烧干。",
+        "筷子能轻松插入最厚处、没有硬芯即可取出，稍晾后吃。"
+      ],
+      "tip": "不需要油盐；按南瓜厚度和品种调整时间。",
+      "spicy": false,
+      "categories": [
+        "steam"
+      ],
+      "portionNote": "这是一道菜的参考量，建议搭配米饭和其他菜；不是每人一整份。"
+    },
+    {
+      "id": "dish_qingchao_huanggua",
+      "name": "清炒黄瓜",
+      "emoji": "🥒",
+      "description": "只用黄瓜和油盐，清爽省事",
+      "required": [
+        "huang_gua"
+      ],
+      "seasonings": [
+        "shi_yong_you",
+        "yan"
+      ],
+      "optional": [
+        "suan"
+      ],
+      "tags": [
+        "家常",
+        "快手"
+      ],
+      "timeMin": 10,
+      "difficulty": 1,
+      "equipment": "炒锅",
+      "servings": 2,
+      "spicy": false,
+      "materials": {
+        "main": [
+          {
+            "id": "huang_gua",
+            "amount": 400,
+            "unit": "克",
+            "note": "去两端后的重量。"
+          }
+        ],
+        "seasonings": [
+          {
+            "id": "shi_yong_you",
+            "amount": 10,
+            "unit": "毫升"
+          },
+          {
+            "id": "yan",
+            "amount": 2,
+            "unit": "克",
+            "note": "先少放，熟后尝味再补；加生抽、蚝油等咸味调料时减盐。"
+          }
+        ],
+        "optional": [
+          {
+            "id": "suan",
+            "amount": 2,
+            "unit": "瓣",
+            "note": "可不放，少一点蒜香，黄瓜直接炒就行。"
+          }
+        ]
+      },
+      "steps": [
+        "黄瓜洗净，切成约 3 毫米薄片。",
+        "炒锅中火放油，有蒜末可先炒香，没有就直接下黄瓜。",
+        "中大火翻炒约 2—3 分钟，至黄瓜热透、略变软。",
+        "加盐翻匀装盘，喜欢软一点可以再炒约 1 分钟，不需要生抽或醋。"
+      ],
+      "tip": "最后放盐，黄瓜不容易出太多水；不需要鸡蛋或肉。",
+      "categories": [
+        "stirfry"
+      ],
+      "portionNote": "这是一道菜的参考量，建议搭配米饭和其他菜；不是每人一整份。"
+    }
+  ]
+}
