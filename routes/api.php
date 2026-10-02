@@ -9,6 +9,7 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::put('kitchen', [\App\Http\Controllers\Api\KitchenController::class, 'update'])->middleware('throttle:120,1');
     Route::get('user/info', [UserController::class, 'info']);
     Route::post('user/update-name', [UserController::class, 'updateName']);
+    Route::post('user/avatar', [UserController::class, 'avatar'])->middleware('throttle:30,1');
     Route::post('user/logout', [UserController::class, 'logout']);
     Route::prefix('admin')->middleware(\App\Http\Middleware\RequireAdmin::class)->group(function () {
         Route::get('catalog', [\App\Http\Controllers\Api\AdminCatalogController::class, 'index']);

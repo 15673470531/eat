@@ -25,6 +25,7 @@ docker compose exec app php artisan migrate
 只有通用骨架，没有任何业务表和业务接口：
 
 - 微信登录 `/api/user/login`（本地 `code=dev_001` 免校验直接登录）、`/api/user/info`、`/api/user/update-name`、`/api/user/bind-phone`、`/api/user/logout`
+- 头像上传 `/api/user/avatar`（小程序 chooseAvatar 选出的图上传到这里，存 `public` 磁盘 `avatars/`，`avatar_url` 只存相对路径，下发时统一成 `/storage/xxx`）
 - Filament 后台 + 用户管理
 - migration 只有 9 个通用表（users/cache/jobs/personal_access_tokens + users 的 openid/is_admin/phone/last_login_at/last_active_at）
 
@@ -41,4 +42,6 @@ docker compose exec app php artisan migrate
   **不要沿用 money 的**（骨架里原本硬编码了 money 的 appid，已改成走 env）
 - 上线前改 `docker/nginx/default.conf` 的域名与证书文件名（模板里是 `example.com`）
 - 本地开发走 `docker-compose.override.yml`，连的是本项目自己的 mysql 容器，不会碰线上库
+- 头像依赖 `public/storage` 软链（已在 .gitignore 里，服务器上不会有）：部署后执行一次 `php artisan storage:link`，否则头像地址 404
+- 测试用 `php vendor/bin/phpunit`（sqlite 内存库）；本机默认 `php` 是 7.3 跑不了，用 `/opt/homebrew/opt/php/bin/php`（8.4）
 # eat
