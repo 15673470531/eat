@@ -24,12 +24,21 @@ docker compose -p eatwhat -f compose.production.yml up -d
 
 6. 真机验证：我的 → 微信登录 → 退出 → 再登录，数据库应为同一用户。失败时只提示失败，绝不降级成开发账号。Token 有效期 30 天，退出撤销当前 token。
 
+7. 「关于我们」内容（含公众号文章链接、入口文案）存在 `app_settings.about`，换链接不用发小程序版本：
+
+```sh
+docker compose -p eatwhat -f compose.production.yml run --rm app php artisan about:set              # 查看
+docker compose -p eatwhat -f compose.production.yml run --rm app php artisan about:set article https://mp.weixin.qq.com/s/新地址
+```
+
+不带参数只打印当前内容，不改库；字段没写过时下发代码默认值（见 `app/Services/AboutSettings.php`）。
+
 ## 接口
 - POST /api/user/login，JSON `{ "code": "wx.login 返回的临时凭证" }`，每 IP 每分钟最多 10 次。
 - GET /api/user/info；POST /api/user/logout：Authorization: Bearer token。
 - POST /api/user/update-name：已登录，JSON `{ "name": "昵称" }`。
 - 正常响应 `{code:0,msg:"success",data:...}`；鉴权失败 HTTP 401。
 
-当前版本登录后同步冰箱、收藏、采购清单和偏好；游客使用独立本地存储，登录后直接读取账号数据。数据库设计和本地联调见 database.md。登录不自动获取微信头像昵称或手机号。关于我们邮箱为 1174430282@qq.com。
+当前版本登录后同步冰箱、收藏、采购清单和偏好；游客使用独立本地存储，登录后直接读取账号数据。数据库设计和本地联调见 database.md。登录不自动获取微信头像昵称或手机号。关于我们页不展示开发者邮箱、微信等个人联系方式，联系入口统一走「联系客服」与公众号。
 
 接口自动测试使用 Http::fake 模拟微信服务，不等同于真实微信联调。微信流程参考：https://developers.weixin.qq.com/miniprogram/dev/OpenApiDoc/user-login/code2Session.html

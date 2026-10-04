@@ -27,8 +27,8 @@ class UserAvatarTest extends TestCase
     {
         return User::create([
             'openid' => 'test_avatar_user',
-            'name' => '海豚用户',
-            'nickname' => '海豚用户',
+            'name' => '微信用户',
+            'nickname' => '微信用户',
             'email' => 'avatar@test.invalid',
             'password' => 'secret',
         ]);

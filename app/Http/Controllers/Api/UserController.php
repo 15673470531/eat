@@ -29,7 +29,7 @@ class UserController extends Controller
             return response()->json(['code' => 2, 'msg' => '微信凭证已失效，请重新登录'], 422);
         }
         $user = User::firstOrCreate(['openid' => $body['openid']], [
-            'name' => '海豚用户', 'nickname' => '海豚用户',
+            'name' => '微信用户', 'nickname' => '微信用户',
             'email' => hash('sha256', $body['openid']).'@wechat.invalid',
             'password' => Str::random(64),
         ]);

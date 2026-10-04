@@ -5,7 +5,7 @@
 - `ingredients`：食材、分类、别名与排序（98 种）。
 - `recipes`：菜名与排序；`details` JSON 保存做法步骤、菜品分类、标签、人数、耗时、提示等随菜谱整体读取的内容（44 道）。
 - `recipe_materials`：菜谱关联食材、主料/必需调料/可选材料、数量、单位、省略说明。
-- `app_settings`：关于我们的品牌名、标语、邮箱、开发者微信。
+- `app_settings`：关于我们的品牌名、标语、公众号文章链接与入口文案（`key=about` 一行 JSON）。不存开发者邮箱、微信等个人联系方式。
 - `users` / `personal_access_tokens`：现有微信用户与登录凭证。
 - `user_kitchens`：每用户一个聚合版本号；偏好 JSON 包含人数、临时选择、常备调料、快手/不辣、厨具与当前模式。
 - `user_inventory`：每份食材的稳定 key、数量（NULL 表示没数过）、单位、存放位置。
@@ -29,7 +29,16 @@ docker compose exec app php artisan db:seed --class=KitchenCatalogSeeder
 ## 接口与同步协议
 
 - GET `/api/catalog`：数据库返回完整食材和菜谱；前端有随包与本机缓存，离线可继续推荐。
-- GET `/api/about`：品牌与联系方式。
+- GET `/api/about`：品牌、联系方式与公众号文章（`article` 链接、`articleText` 入口文案）。
+
+关于我们内容以 `AboutSettings::DEFAULTS` 打底，`app_settings.about` 里写过的字段覆盖它：新增字段不用等小程序发版，线上没写过库也会立即下发。改内容用命令行（也可只改库）：
+
+```sh
+docker compose exec app php artisan about:set              # 查看当前内容
+docker compose exec app php artisan about:set article https://mp.weixin.qq.com/s/新地址
+docker compose exec app php artisan about:set articleText 领取福利
+docker compose exec app php artisan about:set article --forget   # 退回代码默认值
+```
 - GET `/api/kitchen`：需要 Bearer Token，返回 `{revision,state}`。
 - PUT `/api/kitchen`：`{revision,requestId,state}`，requestId 为 UUID。成功整个厨房状态原子入库，版本加一；相同请求重试幂等，旧 revision 返回 HTTP 409。
 
@@ -42,7 +51,7 @@ docker compose exec app php artisan db:seed --class=KitchenCatalogSeeder
 ## 验证
 
 ```sh
-php artisan test --filter 'KitchenDatabaseTest|WechatLoginTest'
+php artisan test --filter 'KitchenDatabaseTest|WechatLoginTest|AboutSettingsTest'
 # 前端目录，Node 18+
 node --test tests/*.test.js
 ```
