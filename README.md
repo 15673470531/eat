@@ -1,6 +1,6 @@
 # eatWhat 后端
 
-选菜小程序后端。由通用骨架 `laravelBase` 复制而来（Laravel 12 + Filament 5 + Sanctum，全 Docker）。
+ 选菜小程序后端。由通用骨架 `laravelBase` 复制而来（Laravel 12 + Filament 5 + Sanctum，全 Docker）。
 
 ## 端口
 
