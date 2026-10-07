@@ -23,3 +23,5 @@ Route::middleware('auth:sanctum')->group(function () {
 
 // Independent mini-game telemetry; existing business routes stay unchanged.
 require __DIR__.'/game_analytics.php';
+
+require __DIR__.'/game_account.php';
