@@ -20,3 +20,6 @@ Route::middleware('auth:sanctum')->group(function () {
         Route::patch('recipes/{id}/status', [\App\Http\Controllers\Api\AdminCatalogController::class, 'status']);
     });
 });
+
+// Independent mini-game telemetry; existing business routes stay unchanged.
+require __DIR__.'/game_analytics.php';
