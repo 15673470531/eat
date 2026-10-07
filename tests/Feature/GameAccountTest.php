@@ -102,6 +102,20 @@ class GameAccountTest extends TestCase
         $this->postJson('/api/game-account/onboarding', ['source' => 'legacy', 'payload' => $p])->assertUnprocessable();
         $p = $this->payload();
         $p['equip']['weapon'] = ['name' => 'broken'];
-        $this->postJson('/api/game-account/onboarding',['source' => 'legacy', 'payload' => $p])->assertUnprocessable();
+        $this->postJson('/api/game-account/onboarding', ['source' => 'legacy', 'payload' => $p])->assertUnprocessable();
+    }
+
+    public function test_login_diagnostics_do_not_expose_credentials(): void
+    {
+        Http::swap(new Factory);
+        Http::fake(['api.weixin.qq.com/*' => Http::response(['errcode' => 40029, 'errmsg' => 'private-detail'])]);
+        $r = $this->postJson('/api/game-account/login', ['code' => 'bad-code', 'client_appid' => 'game-app'])->assertStatus(422);
+        $this->assertStringContainsString('40029', $r->json('message'));
+        $this->assertStringNotContainsString('private-detail', $r->getContent());
+        $this->assertDatabaseCount('game_players', 0);
+        Http::swap(new Factory);
+        Http::fake();
+        $this->postJson('/api/game-account/login', ['code' => 'code', 'client_appid' => 'other-app'])->assertStatus(503);
+        Http::assertNothingSent();
     }
 }
