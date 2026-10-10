@@ -65,6 +65,35 @@ class GameAnalyticsTest extends TestCase
         $this->postJson('/api/game-analytics/events', ['padding' => str_repeat('a', 65537)])->assertStatus(413);
     }
 
+    /**
+     * 2026-10 新增的 6 个事件必须被服务端白名单接受。
+     * 为什么单独测：客户端与这里是**两份同名白名单**，任何一边漏加都不会报错 ——
+     * 服务端漏了是 422（整批被客户端当坏记录丢掉），客户端漏了是静默丢弃。
+     * 这份清单和 config/game_analytics.php 的 events 是同一个来源，这里钉住"新事件真的能进来"。
+     */
+    public function test_new_session_and_tutorial_events_are_accepted(): void
+    {
+        $names = ['kdtl_launch', 'kdtl_tut_step', 'kdtl_tut_end',
+            'kdtl_login', 'kdtl_stage_enter', 'kdtl_snapshot'];
+        $payload = $this->payload();
+        $payload['events'] = [];
+        foreach ($names as $i => $name) {
+            $payload['events'][] = array_replace($this->payload()['events'][0], [
+                'seq' => $i + 1,
+                'event_name' => $name,
+                // 全部信息塞 detail（不新增字段，所以不需要迁移）：教学期也在第 1 关，stage 必须 >= 1
+                'detail' => 'step:3',
+            ]);
+        }
+        $this->postJson('/api/game-analytics/events', $payload)
+            ->assertOk()
+            ->assertJsonCount(count($names), 'data.acknowledged');
+        $this->assertDatabaseCount('game_analytics_events', count($names));
+        foreach ($names as $name) {
+            $this->assertDatabaseHas('game_analytics_events', ['event_name' => $name]);
+        }
+    }
+
     public function test_reports_require_admin_and_exclude_test_records_by_default(): void
     {
         $payload = $this->payload();
