@@ -161,6 +161,33 @@ class GameAccountTest extends TestCase
         $this->postJson('/api/game-account/onboarding', ['source' => 'legacy', 'payload' => $p])->assertUnprocessable();
     }
 
+    public function test_throw_mods_round_trip_and_unlock_boundaries(): void
+    {
+        $this->withToken($this->login());
+        $p = json_decode(file_get_contents(base_path('tests/Fixtures/game-current-save.json')), true);
+        $p['mastery'] = ['sword' => 600, 'boomerang' => 600, 'knife' => 600];
+        $p['loadout'] = ['weapon' => 'knife', 'mods' => ['boomerang' => 'twin', 'knife' => 'burst']];
+        $this->postJson('/api/game-account/onboarding', ['source' => 'legacy', 'payload' => $p])->assertOk();
+        $this->getJson('/api/game-account/me')->assertOk()
+            ->assertJsonPath('data.save.payload.loadout.mods.boomerang', 'twin')
+            ->assertJsonPath('data.save.payload.loadout.mods.knife', 'burst');
+        $revision = 1;
+        foreach (['boomerang' => ['return' => 300, 'twin' => 600], 'knife' => ['pierce' => 300, 'burst' => 600]] as $kind => $mods) {
+            foreach ($mods as $id => $need) {
+                $p['loadout']['mods'] = [$kind => $id];
+                $p['mastery'][$kind] = $need - 1;
+                $body = ['revision' => $revision, 'request_id' => (string) Str::uuid(), 'payload' => $p];
+                $this->putJson('/api/game-account/save', $body)->assertUnprocessable();
+                $body['payload']['mastery'][$kind] = $need;
+                $this->putJson('/api/game-account/save', $body)->assertOk()->assertJsonPath('data.revision', ++$revision);
+            }
+        }
+        $p['bag'] = [];
+        $p['equip']['weapon'] = null;
+        $p['loadout'] = ['weapon' => 'sword', 'mods' => ['boomerang' => 'return']];
+        $this->putJson('/api/game-account/save', ['revision' => $revision, 'request_id' => (string) Str::uuid(), 'payload' => $p])->assertUnprocessable();
+    }
+
     public function test_v1_legacy_weapons_are_still_accepted(): void
     {
         $this->withToken($this->login());

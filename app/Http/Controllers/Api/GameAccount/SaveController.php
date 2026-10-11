@@ -23,8 +23,10 @@ class SaveController extends Controller
             'payload.weaponCount.*' => 'integer|between:0,10000000',
             'payload.loadout' => 'sometimes|array:weapon,mods',
             'payload.loadout.weapon' => 'required_with:payload.loadout|in:sword,boomerang,knife',
-            'payload.loadout.mods' => 'present_with:payload.loadout|array:sword',
+            'payload.loadout.mods' => 'present_with:payload.loadout|array:sword,boomerang,knife',
             'payload.loadout.mods.sword' => 'sometimes|in:giant,swift',
+            'payload.loadout.mods.boomerang' => 'sometimes|in:return,twin',
+            'payload.loadout.mods.knife' => 'sometimes|in:pierce,burst',
             'payload.equip' => 'required|array:weapon,armor,trinket',
             'payload.bag' => 'present|array|max:5',
             'payload.best' => 'required|array:wave,kills',
@@ -74,10 +76,13 @@ class SaveController extends Controller
             if (! in_array($payload['loadout']['weapon'], $owned, true)) {
                 throw ValidationException::withMessages(['payload.loadout.weapon' => '只能选择已拥有的武器']);
             }
-            $mod = $payload['loadout']['mods']['sword'] ?? null;
-            $need = ['giant' => 300, 'swift' => 600];
-            if ($mod && ($payload['mastery']['sword'] ?? 0) < $need[$mod]) {
-                throw ValidationException::withMessages(['payload.loadout.mods.sword' => '熟练度尚未解锁该改造']);
+            $needs = ['sword' => ['giant' => 300, 'swift' => 600],
+                'boomerang' => ['return' => 300, 'twin' => 600],
+                'knife' => ['pierce' => 300, 'burst' => 600]];
+            foreach ($payload['loadout']['mods'] as $kind => $mod) {
+                if (! in_array($kind, $owned, true) || ($payload['mastery'][$kind] ?? 0) < $needs[$kind][$mod]) {
+                    throw ValidationException::withMessages(["payload.loadout.mods.$kind" => '武器未拥有或熟练度尚未解锁该改造']);
+                }
             }
         }
 
