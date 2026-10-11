@@ -22,7 +22,7 @@ class AdminEmailLoginTest extends TestCase
 
     public function test_login_page_has_email_and_optional_password(): void
     {
-        $this->get('/admin/login')->assertOk()->assertSee('账号邮箱')->assertSee('密码（选填）');
+        $this->get('/admin/manage/login')->assertOk()->assertSee('账号邮箱')->assertSee('密码（选填）');
         Livewire::test(EmailLogin::class)->assertFormFieldExists('password', fn ($field) => ! $field->isRequired());
         $this->assertSame(EmailLogin::class, Filament::getPanel('admin')->getLoginRouteAction());
     }
@@ -34,7 +34,7 @@ class AdminEmailLoginTest extends TestCase
         $user = User::where('email', '1174430282@qq.com')->sole();
         $this->assertSame($user->id, auth()->id());
         $this->assertTrue($user->is_admin);
-        $this->get('/admin/chapter-monitor')->assertOk();
+        $this->get('/admin/manage/chapter-monitor')->assertOk();
     }
 
     public function test_other_emails_and_invalid_input_cannot_create_or_access_admin(): void

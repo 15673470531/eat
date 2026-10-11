@@ -158,7 +158,7 @@ class GameChapterMonitorTest extends TestCase
         Filament::setCurrentPanel(Filament::getPanel('admin'));
         $run = DB::table('game_chapter_runs')->value('id');
         Livewire::test(ChapterMonitor::class)->assertSee('开局武器对照')->call('user', $id)->assertSee('最近50次登录')->call('openRun', $run)->assertSee('刀境·远')->assertSee('远锋')->set('from', '2026-01-01')->set('to', '2026-04-01')->call('search')->assertHasErrors('to');
-        $this->get('/admin/chapter-monitor')->assertOk()->assertSee('第一章监控');
+        $this->get('/admin/manage/chapter-monitor')->assertOk()->assertSee('第一章监控');
         $this->assertTrue($admin->canAccessPanel(Filament::getPanel('admin')));
         $normal = User::factory()->create(['is_admin' => false]);
         $this->actingAs($normal);
