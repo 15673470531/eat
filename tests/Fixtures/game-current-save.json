@@ -1,0 +1,79 @@
+{
+  "v": 2,
+  "loadout": {
+    "weapon": "knife",
+    "mods": {
+      "sword": "swift"
+    }
+  },
+  "gold": 0,
+  "mastery": {
+    "knife": 150,
+    "sword": 650
+  },
+  "equip": {
+    "weapon": {
+      "id": "loot-knife-1",
+      "slot": "weapon",
+      "slotName": "武器",
+      "kind": "knife",
+      "name": "飞刀",
+      "rarity": 1,
+      "rarityName": "普通",
+      "color": "#c9ccd2",
+      "affixes": [],
+      "score": 0
+    },
+    "armor": null,
+    "trinket": null
+  },
+  "bag": [
+    {
+      "id": "sword-default",
+      "slot": "weapon",
+      "slotName": "武器",
+      "kind": "sword",
+      "name": "长剑",
+      "rarity": 1,
+      "rarityName": "普通",
+      "color": "#c9ccd2",
+      "affixes": [],
+      "score": 0
+    },
+    {
+      "id": "loot-boomerang-1",
+      "slot": "weapon",
+      "slotName": "武器",
+      "kind": "boomerang",
+      "name": "回旋镖",
+      "rarity": 1,
+      "rarityName": "普通",
+      "color": "#c9ccd2",
+      "affixes": [],
+      "score": 0
+    },
+    {
+      "id": "loot-knife-1",
+      "slot": "weapon",
+      "slotName": "武器",
+      "kind": "knife",
+      "name": "飞刀",
+      "rarity": 1,
+      "rarityName": "普通",
+      "color": "#c9ccd2",
+      "affixes": [],
+      "score": 0
+    }
+  ],
+  "weaponCount": {
+    "boomerang": 1,
+    "knife": 2
+  },
+  "best": {
+    "wave": 1,
+    "kills": 0
+  },
+  "runs": 0,
+  "chapterCompleted": 0,
+  "storySeen": false
+}

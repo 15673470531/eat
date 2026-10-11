@@ -14,11 +14,17 @@ class SaveController extends Controller
     {
         abort_if(strlen($request->getContent()) > 65536, 413, '存档过大');
         $rules = [
-            'payload' => 'required|array:v,gold,mastery,equip,bag,best,runs,chapterCompleted,storySeen',
-            'payload.v' => 'required|integer|in:1',
+            'payload' => 'required|array:v,gold,mastery,equip,bag,best,runs,chapterCompleted,storySeen,weaponCount,loadout',
+            'payload.v' => 'required|integer|in:1,2',
             'payload.gold' => 'required|integer|between:0,100000000',
-            'payload.mastery' => 'present|array:sword,dagger,greatsword,spear,staff',
+            'payload.mastery' => 'present|array:sword,dagger,greatsword,spear,staff,boomerang,knife',
             'payload.mastery.*' => 'integer|between:0,10000000',
+            'payload.weaponCount' => 'sometimes|array:sword,boomerang,knife',
+            'payload.weaponCount.*' => 'integer|between:0,10000000',
+            'payload.loadout' => 'sometimes|array:weapon,mods',
+            'payload.loadout.weapon' => 'required_with:payload.loadout|in:sword,boomerang,knife',
+            'payload.loadout.mods' => 'present_with:payload.loadout|array:sword',
+            'payload.loadout.mods.sword' => 'sometimes|in:giant,swift',
             'payload.equip' => 'required|array:weapon,armor,trinket',
             'payload.bag' => 'present|array|max:5',
             'payload.best' => 'required|array:wave,kills',
@@ -34,7 +40,7 @@ class SaveController extends Controller
                 $rules[$prefix.'.'.$field] = 'required_with:'.$prefix.'|string|max:'.$max;
             }
             $rules[$prefix.'.slot'] = 'required_with:'.$prefix.'|in:weapon,armor,trinket';
-            $rules[$prefix.'.kind'] = 'nullable|in:sword,dagger,greatsword,spear,staff';
+            $rules[$prefix.'.kind'] = 'nullable|in:sword,dagger,greatsword,spear,staff,boomerang,knife';
             $rules[$prefix.'.rarity'] = 'required_with:'.$prefix.'|integer|between:1,4';
             $rules[$prefix.'.color'] = ['required_with:'.$prefix, 'regex:/^#[a-fA-F0-9]{6}$/'];
             $rules[$prefix.'.score'] = 'required_with:'.$prefix.'|numeric|between:0,100000';
@@ -58,6 +64,23 @@ class SaveController extends Controller
             }
         }
 
+        if (isset($payload['loadout'])) {
+            if (! isset($payload['loadout']['weapon'], $payload['loadout']['mods'])) {
+                throw ValidationException::withMessages(['payload.loadout' => '出战配置需要武器和改造字段']);
+            }
+            $owned = array_column($payload['bag'], 'kind');
+            $owned[] = $payload['equip']['weapon']['kind'] ?? 'sword';
+            $owned[] = 'sword';
+            if (! in_array($payload['loadout']['weapon'], $owned, true)) {
+                throw ValidationException::withMessages(['payload.loadout.weapon' => '只能选择已拥有的武器']);
+            }
+            $mod = $payload['loadout']['mods']['sword'] ?? null;
+            $need = ['giant' => 300, 'swift' => 600];
+            if ($mod && ($payload['mastery']['sword'] ?? 0) < $need[$mod]) {
+                throw ValidationException::withMessages(['payload.loadout.mods.sword' => '熟练度尚未解锁该改造']);
+            }
+        }
+
         return $payload;
     }
 
@@ -67,7 +90,7 @@ class SaveController extends Controller
         $payload = $this->validatePayload($request);
         if ($request->input('source') === 'tutorial') {
             // One fixed reward. Tutorial combat never imports coins, mastery or randomized loot.
-            $payload = ['v' => 1, 'gold' => 0, 'mastery' => [], 'equip' => ['weapon' => null, 'armor' => [
+            $payload = ['v' => $payload['v'], 'weaponCount' => [], 'loadout' => ['weapon' => 'sword', 'mods' => []], 'gold' => 0, 'mastery' => [], 'equip' => ['weapon' => null, 'armor' => [
                 'id' => 'prologue-armor', 'slot' => 'armor', 'slotName' => '护甲', 'kind' => null, 'name' => '守夜者旧甲',
                 'rarity' => 1, 'rarityName' => '普通', 'color' => '#c9ccd2', 'affixes' => [['k' => 'maxhp', 'v' => 10, 'label' => '生命']], 'score' => 10],
                 'trinket' => null], 'bag' => [], 'best' => ['wave' => 1, 'kills' => 0], 'runs' => 0, 'chapterCompleted' => 0, 'storySeen' => false];

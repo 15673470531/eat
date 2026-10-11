@@ -18,6 +18,7 @@ return [
         'kdtl_tut_end',     // 序章完成：detail = done
         'kdtl_login',       // 登录结果：detail = ok|fail
         'kdtl_stage_enter', // 进入下一关：detail = in（起始关卡号由 kdtl_run_start 的 stage 字段给）
+        'kdtl_loadout', 'kdtl_weapon_box', 'kdtl_mod_unlock',
         'kdtl_snapshot',    // 结算快照：detail = g:<金币>,m:<熟练度合计>,uw:<已解锁武器数>
     ],
 ];
