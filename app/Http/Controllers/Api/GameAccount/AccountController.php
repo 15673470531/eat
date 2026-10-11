@@ -37,6 +37,7 @@ class AccountController extends Controller
         // Upsert handles simultaneous first logins without creating duplicate accounts.
         DB::table('game_players')->upsert([['appid' => $appid, 'openid' => $body['openid'], 'tutorial_completed' => false, 'created_at' => now(), 'updated_at' => now(), 'last_login_at' => now()]], ['appid', 'openid'], ['last_login_at', 'updated_at']);
         $player = DB::table('game_players')->where('appid', $appid)->where('openid', $body['openid'])->first();
+        DB::table('game_player_logins')->insert(['player_id'=>$player->id,'source'=>'login','occurred_at'=>now('UTC')]);
         $token = 'gp_'.bin2hex(random_bytes(32));
         DB::table('game_player_sessions')->where('player_id', $player->id)->where('expires_at', '<=', now())->delete();
         DB::table('game_player_sessions')->insert(['token_hash' => hash('sha256', $token), 'player_id' => $player->id, 'expires_at' => now()->addDays(30)]);
@@ -47,6 +48,7 @@ class AccountController extends Controller
     public function show(Request $request)
     {
         $p = $request->attributes->get('game_player');
+        DB::table('game_player_logins')->insert(['player_id'=>$p->id,'source'=>'restore','occurred_at'=>now('UTC')]);
 
         return response()->json(['data' => ['player_id' => $p->id, 'tutorial_completed' => (bool) $p->tutorial_completed, 'save' => $this->save($p->id)]]);
     }

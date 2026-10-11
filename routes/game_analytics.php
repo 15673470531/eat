@@ -11,6 +11,10 @@ Route::prefix('game-analytics')->withoutMiddleware(UpdateLastActiveAt::class)->g
     Route::post('events', [EventController::class, 'store'])
         ->middleware(['throttle:60,1,game-analytics-ingest', GameAnalyticsIngress::class]);
     Route::middleware(['auth:sanctum', GameAnalyticsAdmin::class, 'throttle:60,1,game-analytics-read'])->group(function () {
+        Route::get('chapter-monitor/summary', [\App\Http\Controllers\Api\GameMonitor\ChapterReportController::class, 'summary']);
+        Route::get('chapter-monitor/runs', [\App\Http\Controllers\Api\GameMonitor\ChapterReportController::class, 'runs']);
+        Route::get('chapter-monitor/players/{id}', [\App\Http\Controllers\Api\GameMonitor\ChapterReportController::class, 'player'])->whereNumber('id');
+        Route::get('chapter-monitor/runs/{id}', [\App\Http\Controllers\Api\GameMonitor\ChapterReportController::class, 'timeline'])->whereNumber('id');
         Route::get('summary', [ReportController::class, 'summary']);
         Route::get('events', [ReportController::class, 'events']);
     });

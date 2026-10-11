@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::prefix('game-account')->withoutMiddleware(UpdateLastActiveAt::class)->group(function () {
     Route::post('login', [AccountController::class, 'login'])->middleware('throttle:15,1,game-login');
+    Route::post('chapter-events', [\App\Http\Controllers\Api\GameMonitor\ChapterEventController::class, 'store'])->middleware([GamePlayerSession::class, 'throttle:60,1,chapter-monitor']);
     Route::middleware([GamePlayerSession::class, 'throttle:60,1,game-save'])->group(function () {
         Route::get('chapters/2/expectation', [ChapterExpectationController::class, 'show']);
         Route::put('chapters/2/expectation', [ChapterExpectationController::class, 'store']);
