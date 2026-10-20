@@ -1,0 +1,89 @@
+{
+  "events": [
+    {
+      "player_id": "12345678-1234-4123-8123-123456789abc",
+      "run_id": "mvfk561u-oq5fhpm1z7",
+      "seq": 1,
+      "event": "start",
+      "occurred_at": "2026-10-19T17:58:08Z",
+      "build": "2026-10-20-exploration-v1",
+      "test_device": false,
+      "data": {
+        "at": 0,
+        "scene": "outdoor",
+        "currentBuild": "2026-10-20-exploration-v1"
+      },
+      "record": {
+        "id": "mvfk561u-oq5fhpm1z7",
+        "seq": 1,
+        "build": "2026-10-20-exploration-v1",
+        "startedAt": "2026-10-19T17:58:08Z",
+        "test": false,
+        "partial": false,
+        "result": "active",
+        "character": "mutantBoy",
+        "startLevels": {
+          "sword": 1,
+          "knife": 1
+        },
+        "collected": {
+          "gold": 0,
+          "fragments": {
+            "green": 0,
+            "blue": 0,
+            "purple": 0,
+            "orange": 0
+          }
+        },
+        "rooms": {
+          "outdoor": {
+            "visits": 1,
+            "seconds": 0,
+            "kills": 0,
+            "damage": 0,
+            "cleared": false
+          }
+        },
+        "route": [
+          {
+            "scene": "outdoor",
+            "at": 0
+          }
+        ],
+        "choices": [],
+        "wallStuns": 0,
+        "bellAttempts": 0,
+        "bellInterrupts": 0,
+        "askedBoss": false,
+        "seconds": 0,
+        "scene": "outdoor",
+        "hp": 100,
+        "kills": 0,
+        "weapons": {
+          "levels": {
+            "sword": 1,
+            "knife": 1
+          },
+          "second": false,
+          "form": "swing",
+          "cards": {}
+        },
+        "materials": {
+          "gold": 0,
+          "fragments": {
+            "green": 0,
+            "blue": 0,
+            "purple": 0,
+            "orange": 0
+          },
+          "bankedGold": 0,
+          "bankedFragments": {}
+        },
+        "rescued": false,
+        "medicine": false,
+        "bellBroken": false,
+        "dropped": 0
+      }
+    }
+  ]
+}

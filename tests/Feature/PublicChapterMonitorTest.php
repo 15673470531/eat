@@ -49,4 +49,12 @@ class PublicChapterMonitorTest extends TestCase
             file_put_contents($path, $response->getContent());
         }
     }
+ public function test_old_monitor_uses_beijing_for_run_and_event_times(): void
+    {
+        $id=$this->seedRun();
+        DB::table('game_chapter_runs')->where('id',$id)->update(['started_at'=>'2026-10-19 16:05:00','last_occurred_at'=>'2026-10-19 16:06:00']);
+        DB::table('game_chapter_events')->where('run_id','public-preview')->update(['occurred_at'=>'2026-10-19 16:06:00']);
+        $this->get('/admin?from=2026-10-20&to=2026-10-20&run_id='.$id)->assertOk()->assertSee('2026-10-20 00:05:00')->assertSee('2026-10-20 00:06:00')->assertDontSee('2026-10-19 16:05:00');
+        $this->assertDatabaseHas('game_chapter_runs',['id'=>$id,'started_at'=>'2026-10-19 16:05:00']);
+    }
 }
