@@ -8,6 +8,7 @@ use App\Http\Middleware\UpdateLastActiveAt;
 use Illuminate\Support\Facades\Route;
 
 Route::prefix('game-analytics')->withoutMiddleware(UpdateLastActiveAt::class)->group(function () {
+    Route::post('exploration', [\App\Http\Controllers\Api\GameAnalytics\ExplorationController::class, 'store'])->middleware(['throttle:60,1,game-exploration', GameAnalyticsIngress::class]);
     Route::post('events', [EventController::class, 'store'])
         ->middleware(['throttle:60,1,game-analytics-ingest', GameAnalyticsIngress::class]);
     Route::middleware(['auth:sanctum', GameAnalyticsAdmin::class, 'throttle:60,1,game-analytics-read'])->group(function () {

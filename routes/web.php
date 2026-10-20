@@ -10,3 +10,5 @@ Route::get('/', function () {
 Route::get('/admin', \App\Http\Controllers\PublicChapterMonitorController::class)->name('chapter-monitor.public');
 Route::get('/admin/chapter-monitor', \App\Http\Controllers\PublicChapterMonitorController::class);
 Route::redirect('/admin/login', '/admin');
+
+Route::get('/admin/exploration', \App\Http\Controllers\ExplorationReportController::class)->name('exploration-report');
